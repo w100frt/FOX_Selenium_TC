@@ -7,16 +7,11 @@
 	"testView":"desktop",
 	"testIds": [
 		{"testId":27},
+		{"testId":33},
 		{"testId":52},
 		{"testId":59},
 		{"testId":75},
 		{"testId":86},
-		{"testId":88},
-		{"testId":22},
-		{"testId":60},
-		{"testId":61},
-		{"testId":73},
-		{"testId":110},
-		{"testId":111}
+		{"testId":88}
 	]
 } 
