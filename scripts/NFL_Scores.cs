@@ -31,7 +31,7 @@ namespace SeleniumProject.Function
 			VerifyError err = new VerifyError();
 			Random random = new Random();
 			
-			string[] playoffTeams = {"Kansas City Chiefs", "Buffalo Bills", "Baltimore Ravens", "Cleveland Browns", "Green Bay Packers", "New Orleans Saints", "Tampa Bay Buccaneers", "Los Angeles Rams"};
+			string[] playoffTeams = {"Kansas City Chiefs", "Buffalo Bills", "Green Bay Packers", "Tampa Bay Buccaneers"};
 
 			string[] preSeason = {"August"};
 			string[] preSeasonWeeks = {"HALL OF FAME GAME", "PRE WEEK 1", "PRE WEEK 2", "PRE WEEK 3", "PRE WEEK 4"};
