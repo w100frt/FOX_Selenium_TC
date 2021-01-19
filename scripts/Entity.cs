@@ -71,7 +71,7 @@ namespace SeleniumProject.Function
 					case "MLB":
 						standings.Add("DIVISION");
 						standings.Add("WILD CARD");
-						standings.Add("SPRING TRAINING");
+						//standings.Add("SPRING TRAINING");
 						break;
 					case "ACC FOOTBALL":
 					case "BIG 12 FOOTBALL":
