@@ -13,7 +13,7 @@
 		{"page":"Navigation", "name":"Store Sport by Data", "data": "NFL"},
 		{"page":"Entity", "name":"Click Odds Tab"},
 		{"page":"Entity_Odds", "name":"Click Prop Header By Name", "data":"SUPER BOWL CHAMPION"},
-		{"page":"Entity_Odds", "name":"Verify Number of Current Prop Displayed", "data":"5"},
+		{"page":"Entity_Odds", "name":"Verify Number of Current Prop Displayed", "data":"4"},
 		{"page":"Entity_Odds", "name":"Verify Team Text Exists for Current Prop"},
 		{"page":"Entity_Odds", "name":"Verify Odds Text Exists for Current Prop"},
 		{"page":"Entity_Odds", "name":"Click See All Futures for Current Prop"},
