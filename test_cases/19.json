@@ -8,6 +8,14 @@
 		{"page":"Navigation", "name":"Open Browser"},
 		{"page":"Navigation", "name":"Navigate to Scores"},
 		{"page":"Scores", "name":"Click NHL"},
-		{"page":"Scores", "name":"Verify Selected Category", "data": "NHL"}
+		{"page":"Scores", "name":"Verify Selected Category", "data": "NHL"},
+		{"page":"Scores", "name":"Is Sport In-Season?", "data": "NHL"},
+		{"page":"NHL_Scores", "name":"Verify NHL Date"},
+		{"page":"Scores", "name":"Verify Scorechip is Displayed"},
+		{"page":"NHL_Scores", "name":"Verify Events in Segment", "data":"NHL"},
+		{"page":"Navigation", "name":"Navigate to Scores"},
+		{"page":"Scores", "name":"Click NHL"},
+		{"page":"Scores", "name":"Click Open Calendar"},
+		{"page":"Scores", "name":"Verify Calendar is Displayed"}
 	]
 }
