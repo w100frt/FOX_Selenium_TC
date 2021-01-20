@@ -2,7 +2,7 @@
 	"testCase":"CBK: Pac-12 Odds",
 	"env":"dev",
 	"testId":"139",
-	"testRail":"",
+	"testRail":"7868272",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
