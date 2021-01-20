@@ -1,0 +1,26 @@
+﻿{
+	"testCase":"NHL: League Odds - Top Action and Props",
+	"env":"dev",
+	"testId":"109",
+	"testRail":"7868058",
+	"testView":"desktop",
+	"testSteps":[
+		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Navigation", "name":"Click Explore"},
+		{"page":"Explore", "name":"Click NHL"},
+		{"page":"Explore", "name":"Click NHL"},
+		{"page":"Entity", "name":"Verify Header Text", "data": "NHL"},
+		{"page":"Navigation", "name":"Store Sport by Data", "data": "NHL"},
+		{"page":"Entity", "name":"Click Odds Tab"},
+		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"ODDS"},
+		{"page":"Entity_Odds", "name":"Verify Top Action Header", "data":"TODAY'S TOP ACTION"},
+		{"page":"Entity_Odds", "name":"Verify Number of Events", "data":"1"},
+		{"page":"Entity_Odds", "name":"Verify Event Odds Details by Number", "data":"1"},
+		{"page":"Entity_Odds", "name":"Click See All Games"},
+		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"SCORES"},
+		{"page":"Entity", "name":"Click Odds Tab"},
+		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"ODDS"},
+		{"page":"Entity_Odds", "name":"Verify Props Header", "data":"TODAY'S PROPS"},
+		{"page":"Entity_Odds", "name":"Verify Number of Event Props", "data":"5"}
+	]
+}
