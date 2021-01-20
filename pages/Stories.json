@@ -2,7 +2,7 @@
 	"page":"Stories",
 	"testDefinitions":[
 		{"name":"Click Add to Favorites Button","objectType":"click","by":"xpath","objectId":"//button[@data-action-location='article favorite']"},
-		{"name":"Click MLB","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'stories-container')]//div[contains(@class,'desktop')]//a[contains(@href,'mlb')]"},
+		{"name":"Click MLB","objectType":"script","by":"xpath","objectId":"Scores"},
 		{"name":"Click NASCAR","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'stories-container')]//div[contains(@class,'desktop')]//a[contains(@href,'nascar')]"},
 		{"name":"Click NBA","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'stories-container')]//div[contains(@class,'desktop')]//a[contains(@href,'nba')]"},
 		{"name":"Click NCAA FB","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'stories-container')]//div[contains(@class,'desktop')]//a[contains(@href,'college-football')]"},
