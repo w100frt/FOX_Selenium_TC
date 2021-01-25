@@ -193,6 +193,15 @@ namespace SeleniumProject.Function
 							player = "14";
 							sport = "9";
 							break;
+						case "NCAA BASKETBALL":
+						case "ACC BASKETBALL":
+						case "BIG 12 BASKETBALL":
+						case "BIG TEN BASKETBALL":
+						case "PAC-12 BASKETBALL":
+						case "SEC BASKETBALL":
+							player = "13";
+							sport = "15";
+							break;
 						default :
 							player = "";
 							sport = "";
