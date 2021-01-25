@@ -63,10 +63,11 @@ namespace SeleniumProject.Function
 						standings.Add("PRESEASON");
 						break;
 					case "NHL":
-						standings.Add("CONFERENCE");
+						//standings.Add("CONFERENCE");
+						standings.Add("LEAGUE");
 						standings.Add("DIVISION");
-						standings.Add("WILD CARD");
-						standings.Add("PRESEASON");
+						//standings.Add("WILD CARD");
+						//standings.Add("PRESEASON");
 						break;
 					case "MLB":
 						standings.Add("DIVISION");
@@ -128,6 +129,29 @@ namespace SeleniumProject.Function
 							break;
 						default :
 							sport = "32";
+							break;
+					}		
+				}
+
+				steps.Add(new TestStep(order, "Verify Count", sport, "verify_count", "xpath", "//div[contains(@class,'teams-list')]//a", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
+			else if (step.Name.Equals("Verify Count of Conferences")) {
+				sport = step.Data;
+				bool success = Int32.TryParse(sport, out total);
+				
+				if (!success) {
+					switch (sport) {
+						case "NCAA FOOTBALL":
+							sport = "23";
+							break;
+						case "NCAA BASKETBALL":
+							sport = "32";
+							break;
+						default :
+							sport = "0";
 							break;
 					}		
 				}
