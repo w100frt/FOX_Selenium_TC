@@ -63,10 +63,11 @@ namespace SeleniumProject.Function
 						standings.Add("PRESEASON");
 						break;
 					case "NHL":
-						standings.Add("CONFERENCE");
+						//standings.Add("CONFERENCE");
+						standings.Add("LEAGUE");
 						standings.Add("DIVISION");
-						standings.Add("WILD CARD");
-						standings.Add("PRESEASON");
+						//standings.Add("WILD CARD");
+						//standings.Add("PRESEASON");
 						break;
 					case "MLB":
 						standings.Add("DIVISION");
