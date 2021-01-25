@@ -137,6 +137,29 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
+			else if (step.Name.Equals("Verify Count of Conferences")) {
+				sport = step.Data;
+				bool success = Int32.TryParse(sport, out total);
+				
+				if (!success) {
+					switch (sport) {
+						case "NCAA FOOTBALL":
+							sport = "23";
+							break;
+						case "NCAA BASKETBALL":
+							sport = "32";
+							break;
+						default :
+							sport = "0";
+							break;
+					}		
+				}
+
+				steps.Add(new TestStep(order, "Verify Count", sport, "verify_count", "xpath", "//div[contains(@class,'teams-list')]//a", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
 			else if (step.Name.Equals("Verify Number of Player Stats Categories") || step.Name.Equals("Verify Number of Team Stats Categories")) {
 				sport = step.Data;
 				player = step.Data;

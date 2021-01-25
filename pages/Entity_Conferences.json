@@ -1,6 +1,6 @@
 ﻿{
 	"page":"Entity_Conferences",
 	"testDefinitions":[
-		{"name":"Verify Count of Conferences","objectType":"verify_count","by":"xpath","objectId":"//div[contains(@class,'teams-list')]//a"}
+		{"name":"Verify Count of Conferences","objectType":"script","by":"xpath","objectId":"Entity"}
 	]
 }
