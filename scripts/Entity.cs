@@ -264,7 +264,7 @@ namespace SeleniumProject.Function
 						break;
 					case "NCAA BASKETBALL":
 						driver.FindElement("xpath","//div[contains(@class,'group-selector')]//a[contains(@class,'title')]").Click();
-						driver.FindElement("xpath","//a[.='DI']]").Click();
+						driver.FindElement("xpath","//a[.='DI']").Click();
 						sport = driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Text;
 						sport = count + games + sport;
 						break;
