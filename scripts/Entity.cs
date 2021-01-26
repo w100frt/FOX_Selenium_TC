@@ -262,6 +262,12 @@ namespace SeleniumProject.Function
 						player = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[2]").Text;
 						sport = sport + ": " + player;
 						break;
+					case "NCAA BASKETBALL":
+						driver.FindElement("xpath","//div[contains(@class,'group-selector')]//a[contains(@class,'title')]").Click();
+						driver.FindElement("xpath","//a[.='DI']]").Click();
+						sport = driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Text;
+						sport = count + games + sport;
+						break;
 					case "NBA":
 						DateTime NBA_season = new DateTime(2021, 1, 01);
 						DateTime NBA_playoff = new DateTime(2021, 7, 30);
