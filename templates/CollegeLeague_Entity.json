@@ -14,7 +14,7 @@
 		{"page":"Navigation","name":"Run Template", "data":"Entity_LeagueSocial"},
 		{"page":"Entity", "name":"Click Conferences Tab"},
 		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"CONFERENCES"},
-		{"page":"Entity_Conferences", "name":"Verify Count of Conferences"},
+		{"page":"Entity_Conferences", "name":"Verify Count of Conferences", "data":"#SPORT"},
 		{"page":"Entity", "name":"Click Stats Tab"},
 		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"STATS"},
 		{"page":"Entity_Stats", "name":"Verify Number of Stats Headers", "data":"2"},
