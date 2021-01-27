@@ -252,7 +252,8 @@ namespace SeleniumProject.Function
 							sport = sport.Replace("PRE", "PRESEASON");
 						}	
 						if (DateTime.Now > NFL_playoff) {
-							playoffs = "S";
+							//playoffs = "S";
+							playoffs = " WEEK";
 						}
 						sport = sport + playoffs + ": " + player;
 						break;
@@ -266,6 +267,7 @@ namespace SeleniumProject.Function
 						driver.FindElement("xpath","//div[contains(@class,'group-selector')]//a[contains(@class,'title')]").Click();
 						driver.FindElement("xpath","//a[.='DI']").Click();
 						sport = driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Text;
+						count = driver.FindElements("xpath","(//div[@class='scores'])[1]//a").Count;
 						sport = count + games + sport;
 						break;
 					case "NBA":
