@@ -130,8 +130,7 @@ namespace SeleniumProject.Function
 						steps.Clear();
 					}
 					
-					channelName = driver.FindElement("xpath","(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]").GetAttribute("href");
-					channelName = channelName.Substring(channelName.LastIndexOf("/" + 1)).ToUpper();
+					channelName = driver.FindElement("xpath","(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]").GetAttribute("aria-label");
 					
 					steps.Add(new TestStep(order, "Select Channel " + channel + " - " + channelName, "", "click", "xpath", "(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]", wait));
 					TestRunner.RunTestSteps(driver, null, steps);
