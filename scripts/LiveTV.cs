@@ -131,7 +131,7 @@ namespace SeleniumProject.Function
 					}
 					
 					channelName = driver.FindElement("xpath","(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]").GetAttribute("href");
-					channelName = channelName.Substring(channelName.LastIndexOf("//" + 1)).ToUpper();
+					channelName = channelName.Substring(channelName.LastIndexOf("live/" + 5)).ToUpper();
 					
 					steps.Add(new TestStep(order, "Select Channel " + channel + " - " + channelName, "", "click", "xpath", "(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]", wait));
 					TestRunner.RunTestSteps(driver, null, steps);
