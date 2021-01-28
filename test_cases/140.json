@@ -1,8 +1,8 @@
 ﻿{
 	"testCase":"CBK: Big East Odds",
 	"env":"dev",
-	"testId":"139",
-	"testRail":"",
+	"testId":"140",
+	"testRail":"7868276",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},

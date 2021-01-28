@@ -1,0 +1,17 @@
+﻿{
+	"project":"fs",
+	"testRailProjectId": 130,
+	"jobName":"NHL Regression Test Suite",
+	"env":"prod",
+	"browser":"chrome",
+	"testView":"desktop",
+	"testIds": [		
+		{"testId":22},
+		{"testId":60},
+		{"testId":61},
+		{"testId":73},
+		{"testId":109},
+		{"testId":110},
+		{"testId":111}
+	]
+} 

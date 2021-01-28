@@ -1,8 +1,8 @@
 ﻿{
-	"testCase":"Explore/Entity: CFB - NCAA BK",
+	"testCase":"Explore/Entity: CBK - NCAA BK",
 	"env":"dev",
 	"testId":"120",
-	"testRail":"",
+	"testRail":"7868270",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},

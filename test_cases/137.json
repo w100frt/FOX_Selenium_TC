@@ -2,7 +2,7 @@
 	"testCase":"CBK: Big 12 Odds",
 	"env":"dev",
 	"testId":"137",
-	"testRail":"",
+	"testRail":"7868274",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},

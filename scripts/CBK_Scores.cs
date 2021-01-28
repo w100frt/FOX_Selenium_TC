@@ -130,7 +130,7 @@ namespace SeleniumProject.Function
 				steps.Clear();
 				
 				data = data + "//li";
-				steps.Add(new TestStep(order, "Verify Number of Groups", "34", "verify_count", "xpath", data, wait));
+				steps.Add(new TestStep(order, "Verify Number of Groups", cbkGroups.Length.ToString(), "verify_count", "xpath", data, wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
 				

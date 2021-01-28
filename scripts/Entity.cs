@@ -63,15 +63,16 @@ namespace SeleniumProject.Function
 						standings.Add("PRESEASON");
 						break;
 					case "NHL":
-						standings.Add("CONFERENCE");
+						//standings.Add("CONFERENCE");
+						standings.Add("LEAGUE");
 						standings.Add("DIVISION");
-						standings.Add("WILD CARD");
-						standings.Add("PRESEASON");
+						//standings.Add("WILD CARD");
+						//standings.Add("PRESEASON");
 						break;
 					case "MLB":
 						standings.Add("DIVISION");
 						standings.Add("WILD CARD");
-						standings.Add("SPRING TRAINING");
+						//standings.Add("SPRING TRAINING");
 						break;
 					case "ACC FOOTBALL":
 					case "BIG 12 FOOTBALL":
@@ -137,6 +138,29 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
+			else if (step.Name.Equals("Verify Count of Conferences")) {
+				sport = step.Data;
+				bool success = Int32.TryParse(sport, out total);
+				
+				if (!success) {
+					switch (sport) {
+						case "NCAA FOOTBALL":
+							sport = "23";
+							break;
+						case "NCAA BASKETBALL":
+							sport = "32";
+							break;
+						default :
+							sport = "0";
+							break;
+					}		
+				}
+
+				steps.Add(new TestStep(order, "Verify Count", sport, "verify_count", "xpath", "//div[contains(@class,'teams-list')]//a", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
 			else if (step.Name.Equals("Verify Number of Player Stats Categories") || step.Name.Equals("Verify Number of Team Stats Categories")) {
 				sport = step.Data;
 				player = step.Data;
@@ -168,6 +192,15 @@ namespace SeleniumProject.Function
 						case "SEC FOOTBALL":
 							player = "14";
 							sport = "9";
+							break;
+						case "NCAA BASKETBALL":
+						case "ACC BASKETBALL":
+						case "BIG 12 BASKETBALL":
+						case "BIG TEN BASKETBALL":
+						case "PAC-12 BASKETBALL":
+						case "SEC BASKETBALL":
+							player = "13";
+							sport = "15";
 							break;
 						default :
 							player = "";
@@ -219,7 +252,8 @@ namespace SeleniumProject.Function
 							sport = sport.Replace("PRE", "PRESEASON");
 						}	
 						if (DateTime.Now > NFL_playoff) {
-							playoffs = "S";
+							//playoffs = "S";
+							playoffs = " WEEK";
 						}
 						sport = sport + playoffs + ": " + player;
 						break;
@@ -228,6 +262,13 @@ namespace SeleniumProject.Function
 						sport = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[1]").Text;
 						player = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[2]").Text;
 						sport = sport + ": " + player;
+						break;
+					case "NCAA BASKETBALL":
+						driver.FindElement("xpath","//div[contains(@class,'group-selector')]//a[contains(@class,'title')]").Click();
+						driver.FindElement("xpath","//a[.='DI']").Click();
+						sport = driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Text;
+						count = driver.FindElements("xpath","(//div[@class='scores'])[1]//a").Count;
+						sport = count + games + sport;
 						break;
 					case "NBA":
 						DateTime NBA_season = new DateTime(2021, 1, 01);
