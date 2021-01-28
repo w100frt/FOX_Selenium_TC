@@ -26,6 +26,7 @@ namespace SeleniumProject.Function
 			string title = "";
 			string edit = "";
 			string top = "";
+			string channelName = "";
 			bool topTitle = true;
 			bool live = false;
 			List<TestStep> steps = new List<TestStep>();
@@ -129,7 +130,10 @@ namespace SeleniumProject.Function
 						steps.Clear();
 					}
 					
-					steps.Add(new TestStep(order, "Select Channel " + channel, "", "click", "xpath", "(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[@class='pointer video'])[" + channel + "]", wait));
+					channelName = driver.FindElement("xpath","(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]").GetAttribute("href");
+					channelName = channelName.Substring(channelName.LastIndexOf("/" + 1)).ToUpper();
+					
+					steps.Add(new TestStep(order, "Select Channel " + channel + " - " + channelName, "", "click", "xpath", "(//div[contains(@class,'live-on-fox-secondary') or @class='live-tv-channel']//a[contains(@class,'pointer video')])[" + channel + "]", wait));
 					TestRunner.RunTestSteps(driver, null, steps);
 					steps.Clear();
 				}
