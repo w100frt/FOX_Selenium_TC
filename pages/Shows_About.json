@@ -1,0 +1,12 @@
+{
+  "page": "Shows_About",
+  "testDefinitions": [
+    {
+
+      "name": "Verify Description Displayed",
+      "objectType": "verify_displayed",
+      "by": "xpath",
+      "objectId": "//div[contains(@class,'ff-h mgn-btm-50')]"
+    }
+  ]
+}

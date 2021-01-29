@@ -1,6 +1,12 @@
 {
 	"page":"Shows_Episodes",
 	"testDefinitions":[
-	{"name":"Verify Videos Is Displayed","objectType":"verify_displayed","by":"xpath","objectId":"//div[contains(@class,'video-container')]"}
+		{
+			
+			"name": "Verify Videos Is Displayed",
+			"objectType": "verify_displayed",
+			"by": "xpath",
+			"objectId": "//div[contains(@class,'video-container')]"
+		}
 	]
 }
