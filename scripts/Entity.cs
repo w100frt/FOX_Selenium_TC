@@ -253,7 +253,7 @@ namespace SeleniumProject.Function
 						}	
 						if (DateTime.Now > NFL_playoff) {
 							//playoffs = "S";
-							playoffs = " WEEK";
+							//playoffs = " WEEK";
 						}
 						sport = sport + playoffs + ": " + player;
 						break;
