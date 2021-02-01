@@ -13,11 +13,11 @@
 			"page": "Shows",
 			"name": "Click Episodes"
 		},
-		/*{
+		{
 			
 			"page": "Shows_Episodes",
 			"name": "Verify Videos Is Displayed"
-		},*/
+		},
 		{
 
 			"page": "Shows",
