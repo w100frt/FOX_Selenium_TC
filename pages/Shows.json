@@ -19,7 +19,7 @@
       "name": "Click About",
       "objectType": "click",
       "by": "xpath",
-      "ojectId": "//div[contains(@class,'desktop')]//a[contains(@href,'about')]"
+      "objectId": "//div[contains(@class,'desktop')]//a[contains(@href,'about')]"
     }
   ]
 }
