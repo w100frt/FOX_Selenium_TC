@@ -73,6 +73,10 @@
       "data": "ADD TO FAVORITES"
     },
     {
+      "page": "Entity",
+      "name": "Verify Header Subtext Exists"
+    },
+    {
       "page": "Navigation",
       "name": "Run Template",
       "data": "Shows_Entity"
