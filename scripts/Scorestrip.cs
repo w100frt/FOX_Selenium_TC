@@ -29,7 +29,7 @@ namespace SeleniumProject.Function
 					log.Error("Expected data to be a numeral. Setting data to 0.");
 					upper = 0;
 				}
-				size = driver.FindElements("xpath", "//div[contains(@class,'score-chip')]").Count;
+				size = driver.FindElements("xpath", "//div[contains(@class,'scorestrip')]//div[contains(@class,'score-chip')]").Count;
 				if (size > 0 && size <= upper) {
 					log.Info("Verification Passed. " + size + " is between 1 and " + upper); 
 				}
