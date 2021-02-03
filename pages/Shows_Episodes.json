@@ -2,11 +2,17 @@
 	"page":"Shows_Episodes",
 	"testDefinitions":[
 		{
-			
+
 			"name": "Verify Videos Is Displayed",
 			"objectType": "verify_displayed",
 			"by": "xpath",
 			"objectId": "//div[contains(@class,'video-container')]"
+		},
+		{
+			"name": "Click Sign In",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'pvp-mvpd-link')]"
 		}
 	]
 }

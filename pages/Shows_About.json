@@ -2,7 +2,6 @@
   "page": "Shows_About",
   "testDefinitions": [
     {
-
       "name": "Verify Description Displayed",
       "objectType": "verify_displayed",
       "by": "xpath",
