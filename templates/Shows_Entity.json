@@ -46,8 +46,16 @@
 		{
 			"page": "LiveTV",
 			"name": "Verify Video is Paused"
-		}
-		/*{
+		},
+		{
+			"page": "LiveTV",
+			"name": "Click Video Play Button"
+		},
+		{
+			"page": "LiveTV",
+			"name": "Verify Video is Playing"
+		},
+		{
 
 			"page": "Shows",
 			"name": "Click Social"
@@ -60,6 +68,6 @@
 		{
 			"page": "Shows_About",
 			"name": "Verify Description Displayed"
-		}*/
+		}
 	]
 }
