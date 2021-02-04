@@ -18,7 +18,7 @@
 			"name": "Click Video Play Button",
 			"objectType": "click",
 			"by": "xpath",
-			"objectId": "//div[contains(@class,'play')]"
+			"objectId": "//div[contains(@class,'video-overlay')]"
 		}
 	]
 }
