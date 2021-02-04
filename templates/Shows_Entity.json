@@ -21,6 +21,11 @@
 		{
 			"page": "Shows_Episodes",
 			"name": "Click Sign In"
+		},
+		{
+			"page": "Navigation",
+			"name": "Run Template",
+			"data": "Optimum_Provider_SignIn"
 		}
 		/*{
 
