@@ -38,6 +38,14 @@
 		{
 			"page": "LiveTV",
 			"name": "Verify Pause Button on Video"
+		},
+		{
+			"page": "LiveTV",
+			"name": "Click Video Pause Button"
+		},
+		{
+			"page": "LiveTV",
+			"name": "Verify Video is Paused"
 		}
 		/*{
 
