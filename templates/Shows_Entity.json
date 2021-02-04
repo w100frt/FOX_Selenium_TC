@@ -14,11 +14,15 @@
 			"name": "Click Episodes"
 		},
 		{
-			
+
 			"page": "Shows_Episodes",
 			"name": "Verify Videos Is Displayed"
 		},
 		{
+			"page": "Shows_Episodes",
+			"name": "Click Sign In"
+		}
+		/*{
 
 			"page": "Shows",
 			"name": "Click Social"
@@ -31,6 +35,6 @@
 		{
 			"page": "Shows_About",
 			"name": "Verify Description Displayed"
-		}
+		}*/
 	]
 }

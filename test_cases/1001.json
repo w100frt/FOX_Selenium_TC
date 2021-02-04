@@ -35,7 +35,7 @@
       "page": "Entity",
       "name": "Verify Header Divider"
     },
-    {
+    /*{
       "page": "Entity",
       "name": "Verify Add or Remove Favorite Button Text",
       "data": "ADD TO FAVORITES"
@@ -71,7 +71,7 @@
       "page": "Entity",
       "name": "Verify Add or Remove Favorite Button Text",
       "data": "ADD TO FAVORITES"
-    },
+    },*/
     {
       "page": "Entity",
       "name": "Verify Header Subtext Exists"
