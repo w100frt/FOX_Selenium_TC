@@ -1,15 +1,15 @@
 {
 	"testCase":"Template_ShowsEntity",
 	"testId":"t1001",
-	"testSteps":[
+	"testSteps": [
 		{
-			
+
 			"page": "Shows_Clips",
 			"name": "Verify Number of Clips",
 			"data": "100"
 		},
 		{
-			
+
 			"page": "Shows",
 			"name": "Click Episodes"
 		},
@@ -26,6 +26,14 @@
 			"page": "Navigation",
 			"name": "Run Template",
 			"data": "Optimum_Provider_SignIn"
+		},
+		{
+			"page": "LiveTV",
+			"name": "Click Video Play Button"
+		},
+		{
+			"page": "LiveTV",
+			"name": "Verify Video is Playing"
 		}
 		/*{
 
