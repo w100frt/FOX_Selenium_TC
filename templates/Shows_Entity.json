@@ -64,10 +64,10 @@
 
 			"page": "Shows",
 			"name": "Click About"
-		}/*,
+		},
 		{
 			"page": "Shows_About",
 			"name": "Verify Description Displayed"
-		}*/
+		}
 	]
 }
