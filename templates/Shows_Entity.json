@@ -48,8 +48,8 @@
 			"name": "Verify Video is Paused"
 		},
 		{
-			"page": "LiveTV",
-			"name": "Capture Number of Additional Channels"
+			"page": "Shows_Episodes",
+			"name": "Capture Number of Additional Episodes"
 		}/*,
 		{
 
