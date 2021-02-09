@@ -49,14 +49,6 @@
 		},
 		{
 			"page": "LiveTV",
-			"name": "Click Video Play Button"
-		},
-		{
-			"page": "LiveTV",
-			"name": "Verify Video is Playing"
-		},
-		{
-			"page": "LiveTV",
 			"name": "Capture Number of Additional Channels"
 		}/*,
 		{
