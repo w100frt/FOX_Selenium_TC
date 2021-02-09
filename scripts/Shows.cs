@@ -34,7 +34,7 @@ namespace SeleniumProject.Function
 
 			if (step.Name.Equals("Capture Number of Additional Episodes"))
 			{
-				size = driver.FindElements("xpath", "//div[@class='video-overlay.pvp-overlay]").Count;
+				size = driver.FindElements("xpath", "//div[contains(@class,'video-overlay)]").Count;
 
 				DataManager.CaptureMap["CHANNELS"] = size.ToString();
 			}
