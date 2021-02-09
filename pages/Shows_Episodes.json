@@ -1,6 +1,6 @@
 {
 	"page":"Shows_Episodes",
-	"testDefinitions":[
+	"testDefinitions": [
 		{
 
 			"name": "Verify Videos Is Displayed",
@@ -19,6 +19,12 @@
 			"objectType": "click",
 			"by": "xpath",
 			"objectId": "//div[contains(@class,'video-overlay')]"
+		},
+		{
+			"name": "Capture Number of Additional Episodes",
+			"objectType": "script",
+			"by": "xpath",
+			"objectId": "Shows"
 		}
 	]
 }

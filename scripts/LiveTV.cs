@@ -93,7 +93,7 @@ namespace SeleniumProject.Function
 			}
 			
 			else if (step.Name.Equals("Capture Number of Additional Channels")) {
-				size = driver.FindElements("xpath", "//div[@class='live-tv-channels']//div[contains(@class,'item') or @class='live-tv-channel']//div[contains(@class,'video-overlay.pvp-overlay')]").Count;
+				size = driver.FindElements("xpath", "//div[@class='live-tv-channels']//div[contains(@class,'item') or @class='live-tv-channel']").Count;
 				
 				// if size is zero, stream is attached to event. return and count
 				if (size == 0) {
