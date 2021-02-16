@@ -244,10 +244,17 @@ namespace SeleniumProject.Function
 				
 				switch (sport) {
 					case "NFL":	
-						DateTime NFL_playoff = new DateTime(2021, 01, 04);
+						DateTime NFL_season = new DateTime(2021, 08, 05);
+						DateTime NFL_playoff = new DateTime(2022, 01, 04);
 						driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Click();
 						sport = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[1]").Text;
 						player = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[2]").Text;
+						if (DateTime.Now > NFL_season) {
+							sport = driver.FindElement("xpath","//div[contains(@class,'date-picker-container') and @style]//span[@class='title-text']").Text;
+						}
+						else {
+							skip = true;
+						}
 						if (sport.StartsWith("PRE")) {
 							sport = sport.Replace("PRE", "PRESEASON");
 						}	
