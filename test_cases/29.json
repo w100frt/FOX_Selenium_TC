@@ -14,6 +14,7 @@
 		{"page":"Navigation", "name":"Navigate to Home"},
 		{"page":"Homepage", "name":"Click Watch Live Button"},
 		{"page":"LiveTV", "name":"Click PVP Overlay Watch Button"},
+		{"page":"LiveTV", "name":"Hover Video Player"},
 		{"page":"LiveTV","name":"Verify PVP Countdown Text", "data":"Preview Pass · 60:00"},
 		{"page":"LiveTV","name":"Verify Video is Playing"},
 		{"page":"LiveTV","name":"Click PVP Overlay MVPD Link"},
