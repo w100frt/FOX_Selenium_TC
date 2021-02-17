@@ -2,7 +2,7 @@
 	"testCase":"Preview Pass Smoke Test",
 	"env":"dev",
 	"testId":"29",
-	"testRail":"",
+	"testRail":"7903272",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
