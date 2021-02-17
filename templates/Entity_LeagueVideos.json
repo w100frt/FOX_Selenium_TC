@@ -13,4 +13,5 @@
 		{"page":"Entity_News", "name":"Click Pagination Link by Number", "data":"LAST_PAGE"},
 		{"page":"Entity_News", "name":"Verify Active Pagination Number", "data":"#LAST_PAGE"},
 		{"page":"Entity_Highlights", "name":"Verify Number of Videos", "data":"25"}
+	]
 }
