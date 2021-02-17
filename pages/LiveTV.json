@@ -21,7 +21,7 @@
 		{"name":"Verify BTN Logo","objectType":"verify_displayed","by":"xpath","objectId":""},
 		{"name":"Verify Full Event Schedule Dropdown","objectType":"verify_value","by":"xpath","objectId":"//div[@id='full-schedule']//div[contains(@class,'dropdown-menu-title')]"},
 		{"name":"Verify Pause Button on Video","objectType":"verify_displayed","by":"xpath","objectId":"//button[@aria-label='Pause']"},
-		{"name":"Verify PVP Countdown Text","objectType":"verify_value","by":"xpath","objectId":"//div[contains(@class,'pvp-expires')]"},
+		{"name":"Verify PVP Countdown Text","objectType":"verify_value","by":"xpath","objectId":"//div[contains(@class,'pvp-expires')]/span"},
 		{"name":"Verify Selected Link on Nav","objectType":"verify_displayed","by": "xpath", "objectId":"//a[@href='/live' and @class='nav-item']//div[@class='nav-item-bar active-nav']"},
 		{"name":"Verify Video","objectType":"verify_displayed","by":"xpath","objectId":"//video[contains(@class,'video')]"},
 		{"name":"Verify Video is Paused","objectType":"script","by":"xpath","objectId":"LiveTV"},
