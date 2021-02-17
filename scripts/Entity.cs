@@ -37,6 +37,10 @@ namespace SeleniumProject.Function
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
 			
 			if (step.Name.Equals("Click Pagination Link by Number")) {
+				if (step.Data.ToUpper().Equals("LAST_PAGE")) {
+					step.Data = driver.FindElement("xpath","//li[span[.='...']]/following-sibling::li[1]").Text;
+					DataManager.CaptureMap["LAST_PAGE"] = step.Data;
+				}
 				steps.Add(new TestStep(order, "Click " + step.Data, "", "click", "xpath", "//nav[@class='pagination']//a[text()='"+ step.Data +"']", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
