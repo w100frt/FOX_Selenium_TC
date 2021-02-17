@@ -31,7 +31,7 @@
 			"name": "Verify Header Text",
 			"data": "FIRST THINGS FIRST"
 		},
-		{
+		/*{
 			"page": "Entity",
 			"name": "Verify Header Divider"
 		},
@@ -75,7 +75,7 @@
 		{
 			"page": "Entity",
 			"name": "Verify Header Subtext Exists"
-		},
+		},*/
 		{
 			"page": "Navigation",
 			"name": "Run Template",
