@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using System.Text;
 using System.Collections.Generic;
 using SeleniumProject.Utilities;
 using SeleniumProject;
@@ -58,6 +59,10 @@ namespace SeleniumProject.Function
 				else {
 					time = step.Data;
 				}
+				
+				byte[] bytes = Encoding.Default.GetBytes(time);
+				time = Encoding.UTF8.GetString(bytes);
+				
 				steps.Add(new TestStep(order, "Verify PVP Countdown Text", time, "verify_value", "xpath", "//div[contains(@class,'pvp-expires')]/span", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
