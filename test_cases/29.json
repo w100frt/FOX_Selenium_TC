@@ -1,0 +1,22 @@
+﻿{
+	"testCase":"Preview Pass Smoke Test",
+	"env":"dev",
+	"testId":"29",
+	"testRail":"",
+	"testView":"desktop",
+	"testSteps":[
+		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Homepage", "name":"Click Watch Live Button"},
+		{"page":"LiveTV","name":"Verify Video Overlay Title", "data": "ENJOY AN HOUR OF TV ON US"},
+		{"page":"LiveTV","name":"Verify Video Overlay Description", "data":"You'll need to sign in with a TV Provider after 60 minutes to continue watching."},
+		{"page":"LiveTV","name":"Click PVP Overlay MVPD Link"},
+		{"page":"MVPD_AccountInfo", "name":"Verify Provider Page Title", "data":"SELECT YOUR TV PROVIDER"},
+		{"page":"Navigation", "name":"Navigate to Home"},
+		{"page":"Homepage", "name":"Click Watch Live Button"},
+		{"page":"LiveTV", "name":"Click PVP Overlay Watch Button"},
+		{"page":"LiveTV","name":"Verify PVP Countdown Text", "data":"Preview Pass · 60:00"},
+		{"page":"LiveTV","name":"Verify Video is Playing"},
+		{"page":"LiveTV","name":"Click PVP Overlay MVPD Link"},
+		{"page":"MVPD_AccountInfo", "name":"Verify Provider Page Title", "data":"SELECT YOUR TV PROVIDER"}
+	]
+}
