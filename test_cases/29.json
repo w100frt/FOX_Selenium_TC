@@ -14,7 +14,7 @@
 		{"page":"Navigation", "name":"Navigate to Home"},
 		{"page":"Homepage", "name":"Click Watch Live Button"},
 		{"page":"MVPD_AccountInfo", "name":"Click PVP Overlay Watch Button"},
-		{"page":"LiveTV","name":"Verify PVP Countdown Text", "data":"Preview Pass · 60:00},
+		{"page":"LiveTV","name":"Verify PVP Countdown Text", "data":"Preview Pass · 60:00"},
 		{"page":"LiveTV","name":"Verify Video is Playing"},
 		{"page":"LiveTV","name":"Click Overlay MVPD Link"},
 		{"page":"MVPD_AccountInfo", "name":"Verify Provider Page Title", "data":"SELECT YOUR TV PROVIDER"}
