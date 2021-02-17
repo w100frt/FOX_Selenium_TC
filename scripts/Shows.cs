@@ -37,7 +37,7 @@ namespace SeleniumProject.Function
 				size = driver.FindElements("xpath", "//div[contains(@class,'video-overlay')]").Count;
 
 				DataManager.CaptureMap["EPISODES"] = size.ToString();
-				log.Info("Number of additional episodes: ", size);
+				log.Info("Number of additional episodes: ", size.ToString());
 			}
 		}
 	}
