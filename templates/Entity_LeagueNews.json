@@ -11,6 +11,6 @@
 		{"page":"Entity_News", "name":"Verify Number of Stories & Videos", "data":"25"},
 		{"page":"Entity_News", "name":"Click Pagination Link by Number", "data":"LAST_PAGE"},
 		{"page":"Entity_News", "name":"Verify Active Pagination Number", "data":"#LAST_PAGE"},
-		{"page":"Entity_News", "name":"Verify Number of Stories & Videos", "data":"25"}
+		{"page":"Entity_News", "name":"Verify Story or Video is Displayed"}
 		]
 }
