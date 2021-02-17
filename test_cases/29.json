@@ -2,7 +2,7 @@
 	"testCase":"Preview Pass Smoke Test",
 	"env":"dev",
 	"testId":"29",
-	"testRail":"",
+	"testRail":"7903272",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
@@ -16,6 +16,7 @@
 		{"page":"LiveTV", "name":"Click PVP Overlay Watch Button"},
 		{"page":"LiveTV","name":"Verify PVP Countdown Text", "data":"Preview Pass · 60:00"},
 		{"page":"LiveTV","name":"Verify Video is Playing"},
+		{"page":"LiveTV", "name":"Hover Video Player"},
 		{"page":"LiveTV","name":"Click PVP Overlay MVPD Link"},
 		{"page":"MVPD_AccountInfo", "name":"Verify Provider Page Title", "data":"SELECT YOUR TV PROVIDER"}
 	]
