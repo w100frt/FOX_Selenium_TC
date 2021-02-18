@@ -50,6 +50,10 @@
 		{
 			"page": "Shows_Episodes",
 			"name": "Capture Number of Additional Episodes"
+		},
+		{
+			"page": "Shows_Episodes",
+			"name": "Select Additional Episodes"
 		}/*,
 		{
 
