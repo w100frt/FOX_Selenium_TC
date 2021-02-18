@@ -21,7 +21,7 @@
 		{"page":"Entity_Odds", "name":"Click See All Futures for Current Prop"},
 		{"page":"Entity_Odds", "name":"Verify Dropdown Title", "data":"SUPER BOWL CHAMPION FUTURES"},
 		{"page":"Navigation", "name":"Capture Current URL", "data":"SBC_FUTURES"},
-		{"page":"Navigation", "name":"Navigate to URL", "data":"https://nj.foxbet.com/#/american_football/outrights/8368353"},
+		{"page":"Navigation", "name":"Navigate to URL", "data":"https://nj.foxbet.com/#/american_football/outrights/8740145"},
 		{"page":"FOXBet", "name":"Capture Number of FB Entities", "data":"SBC_FUTURES_COUNT"},
 		{"page":"Navigation", "name":"Navigate to URL", "data":"#SBC_FUTURES"},
 		{"page":"Entity_Odds", "name":"Verify Number of Table Rows", "data":"#SBC_FUTURES_COUNT"},
