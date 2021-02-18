@@ -37,6 +37,10 @@ namespace SeleniumProject.Function
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
 			
 			if (step.Name.Equals("Click Pagination Link by Number")) {
+				if (step.Data.ToUpper().Equals("LAST_PAGE")) {
+					step.Data = driver.FindElement("xpath","//li[span[.='...']]/following-sibling::li[1]").Text;
+					DataManager.CaptureMap["LAST_PAGE"] = step.Data;
+				}
 				steps.Add(new TestStep(order, "Click " + step.Data, "", "click", "xpath", "//nav[@class='pagination']//a[text()='"+ step.Data +"']", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
@@ -246,11 +250,12 @@ namespace SeleniumProject.Function
 					case "NFL":	
 						DateTime NFL_season = new DateTime(2021, 08, 05);
 						DateTime NFL_playoff = new DateTime(2022, 01, 04);
-						driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Click();
-						sport = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[1]").Text;
-						player = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[2]").Text;
+						
 						if (DateTime.Now > NFL_season) {
-							sport = driver.FindElement("xpath","//div[contains(@class,'date-picker-container') and @style]//span[@class='title-text']").Text;
+							driver.FindElement("xpath","//div[contains(@class,'scores-app-root')]/div[not(@style='display: none;')]//span[@class='title-text']").Click();
+							sport = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[1]").Text;
+							player = driver.FindElement("xpath","//div[contains(@class,'week-selector') and contains(@class,'active')]//li[contains(@class,'selected')]//div[contains(@class,'week')]//div[2]").Text;
+							//sport = driver.FindElement("xpath","//div[contains(@class,'date-picker-container') and @style]//span[@class='title-text']").Text;
 						}
 						else {
 							skip = true;

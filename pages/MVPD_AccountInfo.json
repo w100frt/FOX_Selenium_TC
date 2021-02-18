@@ -12,6 +12,7 @@
 		{"name":"Verify Provider Logos","objectType":"verify_displayed","by":"xpath","objectId":"//div[@class='mvpd-tile']/img"},
 		{"name":"Verify Provider Logos Count","objectType":"verify_count","by":"xpath","objectId":"//div[@class='mvpd-tile']/img"},
 		{"name":"Verify Provider Name","objectType":"verify_value","by":"xpath","objectId":"//div[@class='searched']//div//h2"},
-		{"name":"Verify Provider Signed In","objectType":"verify_displayed","by":"xpath","objectId":"//a[contains(@class,'is-signed-in')]"}
+		{"name":"Verify Provider Signed In","objectType":"verify_displayed","by":"xpath","objectId":"//a[contains(@class,'is-signed-in')]"},
+		{"name":"Verify Provider Page Title","objectType":"verify_value","by":"xpath","objectId":"//div[@class='mvpd-header']//h1"}
 	]
 }

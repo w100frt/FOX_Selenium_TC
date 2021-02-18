@@ -27,6 +27,7 @@
 					const tc = await tc_file.json();
 					sort.set(tc.testId, tc.testCase);
 					sorted = new Map([...sort.entries()].sort());
+					//console.log(sort);
 					//sort.sort(function(a, b){return a-b});
 
 					//htmlString += `<li><a href="${file.name}">${tc.testId}</a> - ${tc.testCase}</li>`;
