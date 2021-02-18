@@ -8,6 +8,8 @@
 		{"page":"Navigation", "name":"Open Browser"},
 		{"page":"Navigation", "name":"Navigate to Scores"},
 		{"page":"Scores", "name":"Click NASCAR"},
-		{"page":"Scores", "name":"Verify Selected Category", "data": "NASCAR"}
+		{"page":"Scores", "name":"Verify Selected Category", "data": "NASCAR"},
+		{"page":"Scores", "name":"Is Sport In-Season?", "data": "NASCAR"},
+		{"page":"NASCAR_Scores", "name":"Determine Current Race"}
 	]
 }
