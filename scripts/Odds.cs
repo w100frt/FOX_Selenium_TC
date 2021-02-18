@@ -39,6 +39,9 @@ namespace SeleniumProject.Function
 							if (DataManager.CaptureMap["SPORT"].Equals("MLB")) {
 								data = "RUN LINE";
 							}
+							else if (DataManager.CaptureMap["SPORT"].Equals("NHL")) {
+								data = "PUCK LINE";
+							}
 							else {
 								data = "SPREAD";	
 							}
