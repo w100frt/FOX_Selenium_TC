@@ -39,6 +39,21 @@ namespace SeleniumProject.Function
 				DataManager.CaptureMap["EPISODES"] = size.ToString();
 				log.Info("Number of additional episodes: " + size);
 			}
+
+			else if (step.Name.Equals("Select Additional Episodes"))
+			{
+				if (DataManager.CaptureMap.ContainsKey("EPISODES"))
+				{
+					size = Int32.Parse(DataManager.CaptureMap["EPISODES"]);
+					for (int i = 1; i <= size; i++)
+					{
+						steps.Add(new TestStep(order, "Run Template", "VerifyChannel", "run_template", "xpath", "", wait));
+						DataManager.CaptureMap["CURRENT_CHANNEL_NUM"] = i.ToString();
+						TestRunner.RunTestSteps(driver, null, steps);
+						steps.Clear();
+					}
+				}
+			}
 		}
-	}
+	} 
 }
