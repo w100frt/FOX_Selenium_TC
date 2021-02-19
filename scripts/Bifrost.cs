@@ -32,6 +32,7 @@ namespace SeleniumProject.Function
 			jsonValue = json;
             DataManager.CaptureMap["IND_EVENTID"] = json["currentSectionId"].ToString();
 			log.Info("Current Section ID from Bifrost: " + DataManager.CaptureMap["IND_EVENTID"]);
+			log.Info(jsonValue["sectionList"]);
 			
 			for (int i = 0; i > jsonValue["sectionList"].Count; i++) {
 				if (DataManager.CaptureMap["IND_EVENTID"] == jsonValue["sectionList"][i].id) {
