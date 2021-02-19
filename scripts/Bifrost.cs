@@ -30,11 +30,11 @@ namespace SeleniumProject.Function
 			var jsonFile = new WebClient().DownloadString(fileLocation);
 			var json = JObject.Parse(jsonFile);
             DataManager.CaptureMap["IND_EVENTID"] = json["currentSectionId"].ToString();
-			log.Info("Current Section ID from Bifrost: " + j);
+			log.Info("Current Section ID from Bifrost: " + DataManager.CaptureMap["IND_EVENTID"]);
 			
-			for (int i = 0; i > json["currentSectionId"].Count; i++) {
-				if (DataManager.CaptureMap["IND_EVENTID"] == json["currentSectionId"][i].id) {
-					log.Info("HERE. " + DataManager.CaptureMap["IND_EVENTID"] + " equals " + json["currentSectionId"][i].id);
+			for (int i = 0; i > json["sectionList"].Count; i++) {
+				if (DataManager.CaptureMap["IND_EVENTID"] == json["sectionList"][i].id) {
+					log.Info("HERE. " + DataManager.CaptureMap["IND_EVENTID"] + " equals " + json["sectionList"][i].id);
 				}
 			}
 			
