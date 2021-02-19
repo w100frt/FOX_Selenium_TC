@@ -10,7 +10,7 @@
 		{"page":"Scores", "name":"Click NASCAR"},
 		{"page":"Scores", "name":"Verify Selected Category", "data": "NASCAR"},
 		{"page":"Scores", "name":"Is Sport In-Season?", "data": "NASCAR"},
-		{"page":"NASCAR_Scores", "name":"Collect Bifrost Info"},
+		{"page":"NASCAR_Scores", "name":"Determine Current Race"},
 		{"page":"NASCAR_Scores", "name":"Verify Event Title", "data":"#IND_EVENT"},
 		{"page":"NASCAR_Scores", "name":"Verify Event Track", "data":"#IND_TRACK"},
 		{"page":"NASCAR_Scores", "name":"Verify Event Location", "data":"#IND_LOC"}

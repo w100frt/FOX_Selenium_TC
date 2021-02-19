@@ -18,7 +18,7 @@ namespace SeleniumProject.Function
 			string wait = step.Wait != null ? step.Wait : "";
 			List<TestStep> steps = new List<TestStep>();
 			IWebElement ele;
-			DateTime today;
+			string month = "";
 			string data = "";
 			string xpath = "";
 			VerifyError err = new VerifyError();
@@ -52,63 +52,12 @@ namespace SeleniumProject.Function
 			}
 			
 			else if (step.Name.Equals("Determine Current Race")) {
-				today = DateTime.Today;
-				// determine week of season by today's date and time
-				if (today >= DateTime.Parse("02/01/2021") && today < DateTime.Parse("02/09/2021 11:00:00")) {
-					data = "4469";
-					DataManager.CaptureMap["IND_EVENT"] = "BUSCH CLASH AT DAYTONA";
-					DataManager.CaptureMap["IND_TRACK"] = "Daytona International Speedway";
-					DataManager.CaptureMap["IND_LOC"] = "Daytona Beach, FL";
-				}
-				else if (today >= DateTime.Parse("02/09/2021 11:00:01") && today < DateTime.Parse("02/15/2021 11:00:00")) {
-					data = "4431";
-					DataManager.CaptureMap["IND_EVENT"] = "DAYTONA 500";
-					DataManager.CaptureMap["IND_TRACK"] = "Daytona International Speedway";
-					DataManager.CaptureMap["IND_LOC"] = "Daytona Beach, FL";
-				}
-				else if (today >= DateTime.Parse("02/15/2021 11:00:01") && today < DateTime.Parse("02/22/2021 11:00:00")) {
-					//data = "4503";
-					//DataManager.CaptureMap["IND_EVENT"] = "O’REILLY AUTO PARTS 253 AT DAYTONA";
-					//DataManager.CaptureMap["IND_TRACK"] = "Daytona International Speedway";
-					//DataManager.CaptureMap["IND_LOC"] = "Daytona Beach, FL";
-				}
-				else if (today >= DateTime.Parse("02/22/2021 11:00:01") && today < DateTime.Parse("03/01/2021 11:00:00")) {
-					data = "4465";
-					DataManager.CaptureMap["IND_EVENT"] = "DIXIE VODKA 400";
-					DataManager.CaptureMap["IND_TRACK"] = "Homestead-Miami Speedway";
-					DataManager.CaptureMap["IND_LOC"] = "Homestead, FL";
-				}
-				else if (today >= DateTime.Parse("03/01/2021 11:00:01") && today < DateTime.Parse("03/08/2021 11:00:00")) {
-					data = "4437";
-					DataManager.CaptureMap["IND_EVENT"] = "PENNZOIL 400 PRESENTED BY JIFFY LUBE";
-					DataManager.CaptureMap["IND_TRACK"] = "Las Vegas Motor Speedway";
-					DataManager.CaptureMap["IND_LOC"] = "Las Vegas, NV";
-				}
-				else if (today >= DateTime.Parse("03/08/2021 11:00:01") && today < DateTime.Parse("03/15/2021 11:00:00")) {
-					data = "4435";
-					DataManager.CaptureMap["IND_EVENT"] = "NASCAR CUP SERIES AT PHOENIX";
-					DataManager.CaptureMap["IND_TRACK"] = "Phoenix Raceway";
-					DataManager.CaptureMap["IND_LOC"] = "Avondale, AZ";
-				}
-				else if (today >= DateTime.Parse("03/15/2021 11:00:01") && today < DateTime.Parse("03/22/2021 11:00:00")) {
-					data = "4463";
-					DataManager.CaptureMap["IND_EVENT"] = "FOLDS OF HONOR QUIKTRIP 500";
-					DataManager.CaptureMap["IND_TRACK"] = "Atlanta Motor Speedway";
-					DataManager.CaptureMap["IND_LOC"] = "Hampton, GA";
-				}
-				else {
-					data = "4436";
-					DataManager.CaptureMap["IND_EVENT"] = "NASCAR CUP SERIES CHAMPIONSHIP";
-					DataManager.CaptureMap["IND_TRACK"] = "Phoenix Raceway";
-					DataManager.CaptureMap["IND_LOC"] = "Avondale, AZ";
-				}		
+				month = DateTime.Now.Month.ToString("00");
+				// determine week of season by today's month
+				steps.Add(new TestStep(order, "Collect Bifrost Info", month, "script", "xpath", "Bifrost", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
 				
-				DataManager.CaptureMap["IND_EVENTID"] = data;
-				xpath = "//div[contains(@id,'"+ data +"')]";
-				ele = driver.FindElement("xpath", xpath);
-                //js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
-                actions.MoveToElement(ele).Perform();
-				log.Info("*TEMPORARY FIX* : Scroll to Score Chip " + data);
 			}		
 			
 			else {

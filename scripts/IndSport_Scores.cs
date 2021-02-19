@@ -47,6 +47,26 @@ namespace SeleniumProject.Function
 				steps.Add(new TestStep(order, step.Name, step.Data, "verify_value", "xpath", xpath, wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
+			}	
+			
+			else if (step.Name.Equals("Verify Event Time")) {
+				xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["IND_EVENTID"] +"')]//div[contains(@class,'pregame-info')]/span[1]";
+				steps.Add(new TestStep(order, step.Name, step.Data, "verify_value", "xpath", xpath, wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}	
+			
+			else if (step.Name.Equals("Verify Event Channel")) {
+				if(DataManager.CaptureMap["IND_CHANNEL"].Equals("FOX") || DataManager.CaptureMap["IND_CHANNEL"].Equals("FS1") || DataManager.CaptureMap["IND_CHANNEL"].Equals("FS2")) {
+					xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["IND_EVENTID"] +"')]//div[contains(@class,'pregame-info')]/img[@alt='"+ DataManager.CaptureMap["IND_CHANNEL"] +"']";
+					steps.Add(new TestStep(order, step.Name, step.Data, "verify_value", "xpath", xpath, wait));
+				}
+				else {
+					xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["IND_EVENTID"] +"')]//div[contains(@class,'pregame-info')]/span[2]";
+					steps.Add(new TestStep(order, step.Name, step.Data, "verify_value", "xpath", xpath, wait));
+				}
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
 			}			
 			
 			else {
