@@ -40,6 +40,7 @@ namespace SeleniumProject.Function
 					DataManager.CaptureMap["IND_EVENT"] = def.Value<string>("title");
 					DataManager.CaptureMap["IND_TRACK"] = def.Value<string>("subtitle");
 					DataManager.CaptureMap["IND_LOC"] = def.Value<string>("subtitle2");
+					DataManager.CaptureMap["IND_TIME"] = def.Value<string>("eventTime");
 					DataManager.CaptureMap["IND_CHANNEL"] = def.Value<string>("tvStation");
 				}
 			}
