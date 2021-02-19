@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Globalization;
 using System.Collections.Generic;
 using SeleniumProject.Utilities;
@@ -26,6 +27,8 @@ namespace SeleniumProject.Function
             OpenQA.Selenium.Interactions.Actions actions = new OpenQA.Selenium.Interactions.Actions(driver.GetDriver());
 
 			if (step.Name.Equals("Verify Event Title")) {
+				byte[] bytes = Encoding.Default.GetBytes(step.Data);
+				step.Data = Encoding.UTF8.GetString(bytes);
 				xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["IND_EVENTID"] +"')]//div[contains(@class,'scorechip-title')]";
 				steps.Add(new TestStep(order, step.Name, step.Data, "verify_value", "xpath", xpath, wait));
 				TestRunner.RunTestSteps(driver, null, steps);
