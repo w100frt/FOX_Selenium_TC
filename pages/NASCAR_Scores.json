@@ -7,8 +7,8 @@
 		{"name":"Determine Current Race","objectType":"script","by":"xpath","objectId":"NASCAR_Scores"},
 		{"name":"Verify Event","objectType":"script","by":"xpath","objectId":"DailyTeam_Scores"},
 		{"name":"Verify Events in Segment","objectType":"script","by":"xpath","objectId":"DailyTeam_Scores"},
-		{"name":"Verify Event Location","objectType":"script","by":"xpath","objectId":"NASCAR_Scores"},
-		{"name":"Verify Event Raceway","objectType":"script","by":"xpath","objectId":"NASCAR_Scores"},
-		{"name":"Verify Event Title","objectType":"script","by":"xpath","objectId":"NASCAR_Scores"}
+		{"name":"Verify Event Location","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
+		{"name":"Verify Event Track","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
+		{"name":"Verify Event Title","objectType":"script","by":"xpath","objectId":"IndSport_Scores"}
 	]
 }
