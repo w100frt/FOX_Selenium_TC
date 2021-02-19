@@ -35,8 +35,8 @@ namespace SeleniumProject.Function
 			log.Info(jsonValue["sectionList"]);
 			
 			foreach (JToken race in jsonValue["sectionList"]) {
-				if (DataManager.CaptureMap["IND_EVENTID"] == race["sectionList"].id) {
-					log.Info("HERE. " + DataManager.CaptureMap["IND_EVENTID"] + " equals " + race["sectionList"].id);
+				if (DataManager.CaptureMap["IND_EVENTID"] == race["id"]) {
+					log.Info("HERE. " + DataManager.CaptureMap["IND_EVENTID"] + " equals " + race["id"]);
 				}
 			}
 			
