@@ -26,7 +26,7 @@ namespace SeleniumProject.Function
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
             OpenQA.Selenium.Interactions.Actions actions = new OpenQA.Selenium.Interactions.Actions(driver.GetDriver());
 			
-			string fileLocation = "https://api.foxsports.com/bifrost/v1/nascar/scoreboard/segment/2021"+month+"?groupId=2&apikey=jE7yBJVRNAwdDesMgTzTXUUSx1It41Fq";
+			string fileLocation = "https://api.foxsports.com/bifrost/v1/nascar/scoreboard/segment/2021"+step.Data +"?groupId=2&apikey=jE7yBJVRNAwdDesMgTzTXUUSx1It41Fq";
 			var jsonFile = new WebClient().DownloadString(fileLocation);
 			var json = JObject.Parse(jsonFile);
 			jsonValue = json;
