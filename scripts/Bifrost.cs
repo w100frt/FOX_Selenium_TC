@@ -29,8 +29,16 @@ namespace SeleniumProject.Function
 			string fileLocation = "https://api.foxsports.com/bifrost/v1/nascar/scoreboard/segment/202102?groupId=2&apikey=jE7yBJVRNAwdDesMgTzTXUUSx1It41Fq";
 			var jsonFile = new WebClient().DownloadString(fileLocation);
 			var json = JObject.Parse(jsonFile);
-            string j = json["currentSectionId"].ToString();
+            DataManager.CaptureMap["IND_EVENTID"] = json["currentSectionId"].ToString();
 			log.Info("Current Section ID from Bifrost: " + j);
+			
+			for (int i = 0; i > json["currentSectionId"].Count; i++) {
+				if (json[]DataManager.CaptureMap["IND_EVENTID"] == json["currentSectionId"][i].id) {
+					log.Info("HERE. " + json[]DataManager.CaptureMap["IND_EVENTID"] + " equals " + json["currentSectionId"][i].id);
+				}
+			}
+			
+
 
 		}
 	}
