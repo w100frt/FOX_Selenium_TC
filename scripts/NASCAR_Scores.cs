@@ -58,6 +58,10 @@ namespace SeleniumProject.Function
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
 				
+				xpath = "//div[@id='"+ DataManager.CaptureMap["IND_EVENTID"] +"']";
+				ele = driver.FindElement("xpath", xpath);
+                js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
+				log.Info("*TEMPORARY FIX* : Scroll to Score Chip " + data);
 			}		
 			
 			else {
