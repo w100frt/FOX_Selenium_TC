@@ -23,6 +23,7 @@ namespace SeleniumProject.Function
 			string xpath = "";
 			VerifyError err = new VerifyError();
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
+            OpenQA.Selenium.Interactions.Actions actions = new OpenQA.Selenium.Interactions.Actions(driver.GetDriver());
 
 			string[] nascarGroups = {"CUP SERIES", "GANDER RV & OUTDOORS TRUCK SERIES", "XFINITY SERIES"};
 			
@@ -80,7 +81,8 @@ namespace SeleniumProject.Function
 				
 				xpath = "//div[contains(@id,'"+ data +"')]";
 				ele = driver.FindElement("xpath", xpath);
-                js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
+                //js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
+                actions.MoveToElement(ele).Perform();
 				log.Info("*TEMPORARY FIX* : Scroll to Score Chip " + data);
 			}
 			
