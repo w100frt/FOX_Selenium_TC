@@ -59,7 +59,7 @@ namespace SeleniumProject.Function
 			else if (step.Name.Equals("Verify Event Channel")) {
 				if(DataManager.CaptureMap["IND_CHANNEL"].Equals("FOX") || DataManager.CaptureMap["IND_CHANNEL"].Equals("FS1") || DataManager.CaptureMap["IND_CHANNEL"].Equals("FS2")) {
 					xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["IND_EVENTID"] +"')]//div[contains(@class,'pregame-info')]/img[@alt='"+ DataManager.CaptureMap["IND_CHANNEL"] +"']";
-					steps.Add(new TestStep(order, step.Name, step.Data, "verify_value", "xpath", xpath, wait));
+					steps.Add(new TestStep(order, step.Name, "", "verify_displayed", "xpath", xpath, wait));
 				}
 				else {
 					xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["IND_EVENTID"] +"')]//div[contains(@class,'pregame-info')]/span[2]";
