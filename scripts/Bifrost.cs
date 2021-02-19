@@ -33,8 +33,8 @@ namespace SeleniumProject.Function
 			log.Info("Current Section ID from Bifrost: " + j);
 			
 			for (int i = 0; i > json["currentSectionId"].Count; i++) {
-				if (json[]DataManager.CaptureMap["IND_EVENTID"] == json["currentSectionId"][i].id) {
-					log.Info("HERE. " + json[]DataManager.CaptureMap["IND_EVENTID"] + " equals " + json["currentSectionId"][i].id);
+				if (DataManager.CaptureMap["IND_EVENTID"] == json["currentSectionId"][i].id) {
+					log.Info("HERE. " + DataManager.CaptureMap["IND_EVENTID"] + " equals " + json["currentSectionId"][i].id);
 				}
 			}
 			
