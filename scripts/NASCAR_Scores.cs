@@ -56,35 +56,81 @@ namespace SeleniumProject.Function
 				// determine week of season by today's date and time
 				if (today >= DateTime.Parse("02/01/2021") && today < DateTime.Parse("02/09/2021 11:00:00")) {
 					data = "4469";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "BUSCH CLASH AT DAYTONA";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Daytona International Speedway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Daytona Beach, FL";
 				}
 				else if (today >= DateTime.Parse("02/09/2021 11:00:01") && today < DateTime.Parse("02/15/2021 11:00:00")) {
 					data = "4431";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "DAYTONA 500";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Daytona International Speedway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Daytona Beach, FL";
 				}
 				else if (today >= DateTime.Parse("02/15/2021 11:00:01") && today < DateTime.Parse("02/22/2021 11:00:00")) {
 					data = "4503";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "O'REILLY AUTO PARTS 253 AT DAYTONA";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Daytona International Speedway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Daytona Beach, FL";
 				}
 				else if (today >= DateTime.Parse("02/22/2021 11:00:01") && today < DateTime.Parse("03/01/2021 11:00:00")) {
 					data = "4465";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "DIXIE VODKA 400";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Homestead-Miami Speedway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Homestead, FL";
 				}
 				else if (today >= DateTime.Parse("03/01/2021 11:00:01") && today < DateTime.Parse("03/08/2021 11:00:00")) {
 					data = "4437";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "PENNZOIL 400 PRESENTED BY JIFFY LUBE";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Las Vegas Motor Speedway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Las Vegas, NV";
 				}
 				else if (today >= DateTime.Parse("03/08/2021 11:00:01") && today < DateTime.Parse("03/15/2021 11:00:00")) {
 					data = "4435";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "NASCAR CUP SERIES AT PHOENIX";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Phoenix Raceway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Avondale, AZ";
 				}
 				else if (today >= DateTime.Parse("03/15/2021 11:00:01") && today < DateTime.Parse("03/22/2021 11:00:00")) {
 					data = "4463";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "FOLDS OF HONOR QUIKTRIP 500";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Atlanta Motor Speedway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Hampton, GA";
 				}
 				else {
 					data = "4436";
+					DataManager.CaptureMap["NASCAR_EVENT"] = "NASCAR CUP SERIES CHAMPIONSHIP";
+					DataManager.CaptureMap["NASCAR_TRACK"] = "Phoenix Raceway";
+					DataManager.CaptureMap["NASCAR_LOC"] = "Avondale, AZ";
 				}		
 				
+				DataManager.CaptureMap["NASCAR_EVENTID"] = data;
 				xpath = "//div[contains(@id,'"+ data +"')]";
 				ele = driver.FindElement("xpath", xpath);
                 //js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
                 actions.MoveToElement(ele).Perform();
 				log.Info("*TEMPORARY FIX* : Scroll to Score Chip " + data);
 			}
+			
+			else if (step.Name.Equals("Verify Event Title")) {
+				xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["NASCAR_EVENTID"] +"')]//div[contains(@class,'scorechip-title')]";
+				steps.Add(new TestStep(order, "Verify Event Title", step.Data, "verify_value", "xpath", xpath, wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
+			else if (step.Name.Equals("Verify Event Raceway")) {
+				xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["NASCAR_EVENTID"] +"')]//div[contains(@class,'scorechip-sub1')]";
+				steps.Add(new TestStep(order, "Verify Event Raceway", step.Data, "verify_value", "xpath", xpath, wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
+			else if (step.Name.Equals("Verify Event Location")) {
+				xpath = "//div[contains(@id,'"+ DataManager.CaptureMap["NASCAR_EVENTID"] +"')]//div[contains(@class,'scorechip-sub2')]";
+				steps.Add(new TestStep(order, "Verify Event Location", step.Data, "verify_value", "xpath", xpath, wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}			
 			
 			else {
 				throw new Exception("Test Step not found in script");
