@@ -32,11 +32,12 @@ namespace SeleniumProject.Function
 			jsonValue = json;
             DataManager.CaptureMap["IND_EVENTID"] = json["currentSectionId"].ToString();
 			log.Info("Current Section ID from Bifrost: " + DataManager.CaptureMap["IND_EVENTID"]);
-			log.Info(jsonValue["sectionList"]);
 			
 			foreach (JToken race in jsonValue["sectionList"]) {
 				if (DataManager.CaptureMap["IND_EVENTID"] == race["id"].ToString()) {
-					log.Info("HERE. " + DataManager.CaptureMap["IND_EVENTID"] + " equals " + race["id"]);
+					DataManager.CaptureMap["IND_EVENT"] = race["title"].ToString();
+					DataManager.CaptureMap["IND_TRACK"] = race["subtitle"].ToString();
+					DataManager.CaptureMap["IND_LOC"] = race["subtitle2"].ToString();
 				}
 			}
 			
