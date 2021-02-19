@@ -10,7 +10,8 @@
 		{"name":"Verify Events in Segment","objectType":"script","by":"xpath","objectId":"DailyTeam_Scores"},
 		{"name":"Verify Event Channel","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
 		{"name":"Verify Event Location","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
-		{"name":"Verify Event Track","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
-		{"name":"Verify Event Title","objectType":"script","by":"xpath","objectId":"IndSport_Scores"}
+		{"name":"Verify Event Time","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
+		{"name":"Verify Event Title","objectType":"script","by":"xpath","objectId":"IndSport_Scores"},
+		{"name":"Verify Event Track","objectType":"script","by":"xpath","objectId":"IndSport_Scores"}
 	]
 }
