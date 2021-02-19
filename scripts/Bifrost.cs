@@ -17,7 +17,7 @@ namespace SeleniumProject.Function
 		public void Execute(DriverManager driver, TestStep step)
 		{
 			JObject jsonValue;
-			JObject def;
+			JToken def;
 			long order = step.Order;
 			string wait = step.Wait != null ? step.Wait : "";
 			List<TestStep> steps = new List<TestStep>();
@@ -35,7 +35,7 @@ namespace SeleniumProject.Function
 			
 			foreach (JToken race in jsonValue["sectionList"]) {
 				if (DataManager.CaptureMap["IND_EVENTID"] == race["id"].ToString()) {
-					log.Info("HERE. Storing values.");
+					log.Info(race["events"]);
 					def = race["events"];
 					DataManager.CaptureMap["IND_EVENT"] = def["title"].ToString();
 					DataManager.CaptureMap["IND_TRACK"] = def["subtitle"].ToString();
