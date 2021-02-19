@@ -13,6 +13,8 @@
 		{"page":"NASCAR_Scores", "name":"Determine Current Race"},
 		{"page":"NASCAR_Scores", "name":"Verify Event Title", "data":"#IND_EVENT"},
 		{"page":"NASCAR_Scores", "name":"Verify Event Track", "data":"#IND_TRACK"},
-		{"page":"NASCAR_Scores", "name":"Verify Event Location", "data":"#IND_LOC"}
+		{"page":"NASCAR_Scores", "name":"Verify Event Location", "data":"#IND_LOC"},
+		{"page":"NASCAR_Scores", "name":"Verify Event Time", "data":"#IND_TIME"},
+		{"page":"NASCAR_Scores", "name":"Verify Event Channel", "data":"#IND_CHANNEL"}
 	]
 }
