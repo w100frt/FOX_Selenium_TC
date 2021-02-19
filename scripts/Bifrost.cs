@@ -35,7 +35,9 @@ namespace SeleniumProject.Function
 			
 			foreach (JToken race in jsonValue["sectionList"]) {
 				if (DataManager.CaptureMap["IND_EVENTID"] == race["id"].ToString()) {
+					log.Info("HERE. Storing values.");
 					DataManager.CaptureMap["IND_EVENT"] = race["title"].ToString();
+					log.Info(race["title"]);
 					DataManager.CaptureMap["IND_TRACK"] = race["subtitle"].ToString();
 					DataManager.CaptureMap["IND_LOC"] = race["subtitle2"].ToString();
 				}
