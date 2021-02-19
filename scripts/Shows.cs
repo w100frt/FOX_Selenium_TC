@@ -20,13 +20,13 @@ namespace SeleniumProject.Function
 			IWebElement ele;
 			int overlay;
 			int size = 0;
-			int channel = 0;
+			int episode = 0;
 			int attempts = 10;
 			string classList = "";
 			string title = "";
 			string edit = "";
 			string top = "";
-			string channelName = "";
+			string episodeNumber = "";
 			bool topTitle = true;
 			bool live = false;
 			List<TestStep> steps = new List<TestStep>();
@@ -52,6 +52,21 @@ namespace SeleniumProject.Function
 						TestRunner.RunTestSteps(driver, null, steps);
 						steps.Clear();
 					}
+				}
+			}
+
+			else if (step.Name.Equals("Select Additional Channel"))
+			{
+				if (DataManager.CaptureMap.ContainsKey("CHANNELS"))
+				{
+					episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
+					steps.Clear();
+
+					episodeNumber = driver.FindElement("xpath", "//div[contains(@class,'video-overlay')][" + episode + "]").GetAttribute("aria-label");
+
+					steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "//div[contains(@class,'video-overlay')][" + episode + "]", wait));
+					TestRunner.RunTestSteps(driver, null, steps);
+					steps.Clear();
 				}
 			}
 		}
