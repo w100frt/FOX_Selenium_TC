@@ -55,9 +55,9 @@ namespace SeleniumProject.Function
 				}
 			}
 
-			else if (step.Name.Equals("Select Additional Channel"))
+			else if (step.Name.Equals("Select Additional Episode"))
 			{
-				if (DataManager.CaptureMap.ContainsKey("CHANNELS"))
+				if (DataManager.CaptureMap.ContainsKey("EPISODES"))
 				{
 					episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 					steps.Clear();
