@@ -37,9 +37,10 @@ namespace SeleniumProject.Function
 				if (DataManager.CaptureMap["IND_EVENTID"] == race["id"].ToString()) {
 					log.Info(race["events"]);
 					def = race["events"];
-					DataManager.CaptureMap["IND_EVENT"] = def["title"].ToString();
-					DataManager.CaptureMap["IND_TRACK"] = def["subtitle"].ToString();
-					DataManager.CaptureMap["IND_LOC"] = def["subtitle2"].ToString();
+					
+					DataManager.CaptureMap["IND_EVENT"] = def.GetValue("title").ToString();
+					DataManager.CaptureMap["IND_TRACK"] = def.GetValue("subtitle").ToString();
+					DataManager.CaptureMap["IND_LOC"] = def.GetValue("subtitle2").ToString();
 				}
 			}
 			
