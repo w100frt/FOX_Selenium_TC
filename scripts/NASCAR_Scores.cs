@@ -68,7 +68,7 @@ namespace SeleniumProject.Function
 				}
 				else if (today >= DateTime.Parse("02/15/2021 11:00:01") && today < DateTime.Parse("02/22/2021 11:00:00")) {
 					data = "4503";
-					DataManager.CaptureMap["IND_EVENT"] = "O'REILLY AUTO PARTS 253 AT DAYTONA";
+					DataManager.CaptureMap["IND_EVENT"] = "O’REILLY AUTO PARTS 253 AT DAYTONA";
 					DataManager.CaptureMap["IND_TRACK"] = "Daytona International Speedway";
 					DataManager.CaptureMap["IND_LOC"] = "Daytona Beach, FL";
 				}
