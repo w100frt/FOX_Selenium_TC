@@ -54,7 +54,7 @@
 		{
 			"page": "Shows_Episodes",
 			"name": "Select Additional Episodes"
-		}/*,
+		},
 		{
 
 			"page": "Shows",
@@ -68,6 +68,6 @@
 		{
 			"page": "Shows_About",
 			"name": "Verify Description Displayed"
-		}*/
+		}
 	]
 }
