@@ -48,6 +48,13 @@
 		{"page":"Scores", "name":"Click Golf"},
 		{"page":"Scores", "name":"Verify Selected Category", "data": "GOLF"},
 		{"page":"Scores", "name":"Verify Golf Groups"},
+		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke"},
+		{"page":"Scores", "name":"Click Boxing"},
+		{"page":"Scores", "name":"Verify Selected Category", "data": "BOXING"},
+		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke"},
+		{"page":"Scores", "name":"Click NCAAW BK"},
+		{"page":"Scores", "name":"Verify Selected Category", "data": "NCAAW BK"},
+		{"page":"Scores", "name":"Verify WCBK Groups"},
 		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke"}
 	]
 }
