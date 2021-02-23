@@ -257,7 +257,7 @@ namespace SeleniumProject.Function
 						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'NCAA BK')]";
 						break;
 					case "NCAAW BK" : 
-						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'NCAA BK')]";
+						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'NCAAW BK')]";
 						break;
 					case "MLB" :
 						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'MLB')]";
