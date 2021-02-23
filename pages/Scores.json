@@ -50,6 +50,6 @@
 		{"name":"Verify Selected Link on Nav","objectType":"verify_displayed","by": "xpath", "objectId":"//a[@href='/scores' and @class='nav-item']//div[@class='nav-item-bar active-nav']"},
 		{"name":"Verify Super6 on Event Page", "objectType":"script", "by":"xpath","objectId":"SuperSix"},
 		{"name":"Verify Super6 Scorechips", "objectType":"script", "by":"xpath","objectId":"SuperSix"},
-		{"name":"Verify WCBK Groups","objectType":"script","by":"xpath","objectId":"CBK_Scores"},
+		{"name":"Verify WCBK Groups","objectType":"script","by":"xpath","objectId":"CBK_Scores"}
 	]
 }
