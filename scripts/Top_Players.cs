@@ -28,7 +28,7 @@ namespace SeleniumProject.Function
 				// set teams for each conference
 				switch(step.Data) {
 					case "MLB":
-						topPlayers = new string[10, 2] { { "Mike Trout", "Los Angeles Angels"}, { "Fernando Tatis Jr.", "San Diego Padres"}, { "Mookie Betts", "Los Angeles Dodgers"}, { "Bryce Harper", "Philadelphia Phillies"}, { "Aaron Judge", "New York Yankees"}, { "Freddie Freeman", "Atlanta Braves"}, { "Shane Bieber", "Cleveland Indians"}, { "Clayton Kershaw", "Los Angeles Dodgers"}, { "Trevor Bauer", "Cincinnati Reds"}, { "Gerrit Cole", "New York Yankees"} };
+						topPlayers = new string[10, 2] { { "Mike Trout", "Los Angeles Angels"}, { "Fernando Tatis Jr.", "San Diego Padres"}, { "Mookie Betts", "Los Angeles Dodgers"}, { "Bryce Harper", "Philadelphia Phillies"}, { "Aaron Judge", "New York Yankees"}, { "Freddie Freeman", "Atlanta Braves"}, { "Shane Bieber", "Cleveland Indians"}, { "Clayton Kershaw", "Los Angeles Dodgers"}, { "Trevor Bauer", "Los Angeles Dodgers"}, { "Gerrit Cole", "New York Yankees"} };
 						break;
 					case "NBA":
 						topPlayers = new string[10, 2] { { "James Harden", "Brooklyn Nets"}, { "Giannis Antetokounmpo", "Milwaukee Bucks"}, { "LeBron James", "Los Angeles Lakers"}, { "Luka Doncic", "Dallas Mavericks"}, { "Kawhi Leonard", "LA Clippers"}, { "Trae Young", "Atlanta Hawks"}, { "Anthony Davis", "Los Angeles Lakers"}, { "Anthony Edwards", "Minnesota Timberwolves"}, { "LaMelo Ball", "Charlotte Hornets"}, { "James Wiseman", "Golden State Warriors"} };
@@ -37,7 +37,7 @@ namespace SeleniumProject.Function
 						topPlayers = new string[10, 2] { { "Patrick Mahomes II", "Kansas City Chiefs"}, { "Russell Wilson", "Seattle Seahawks"}, { "Dalvin Cook", "Minnesota Vikings"}, { "Derrick Henry", "Tennessee Titans"}, { "DK Metcalf", "Seattle Seahawks"}, { "Travis Kelce", "Kansas City Chiefs"}, { "Aaron Donald", "Los Angeles Rams"}, { "Tyrann Mathieu", "Kansas City Chiefs"}, { "Justin Tucker", "Baltimore Ravens"}, { "Joe Burrow", "Cincinnati Bengals"} };
 						break;
 					case "NHL":
-						topPlayers = new string[10, 2] { { "Alex Ovechkin", "Washington Capitals"}, { "David Pastrnak", "Boston Bruins"}, { "Patrick Kane", "Chicago Blackhawks"}, { "Nikita Kucherov", "Tampa Bay Lightning"}, { "Artemi Panarin", "New York Rangers"}, { "Tuukka Rask", "Boston Bruins"}, { "Marc-Andre Fleury", "Vegas Golden Knights"}, { "Leon Draisaitl", "Edmonton Oilers"}, { "Andrei Vasilevskiy", "Tampa Bay Lightning"}, { "Carey Price", "Montreal Canadiens"} };
+						topPlayers = new string[10, 2] { { "Alex Ovechkin", "Washington Capitals"}, { "David Pastrnak", "Boston Bruins"}, { "Patrick Kane", "Chicago Blackhawks"}, { "Auston Matthews", "Toronto Maple Leafs"}, { "Artemi Panarin", "New York Rangers"}, { "Tuukka Rask", "Boston Bruins"}, { "Marc-Andre Fleury", "Vegas Golden Knights"}, { "Leon Draisaitl", "Edmonton Oilers"}, { "Andrei Vasilevskiy", "Tampa Bay Lightning"}, { "Carey Price", "Montreal Canadiens"} };
 						break;
 					default :
 						
