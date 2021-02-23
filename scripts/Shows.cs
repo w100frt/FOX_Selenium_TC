@@ -47,7 +47,7 @@ namespace SeleniumProject.Function
 					size = Int32.Parse(DataManager.CaptureMap["EPISODES"]);
 					for (int i = 1; i <= size; i++)
 					{
-						steps.Add(new TestStep(order, "Run Template", "Shows_Episodes", "run_template", "xpath", "", wait));
+						steps.Add(new TestStep(order, "Run Template", "Shows_Episodes_temp", "run_template", "xpath", "", wait));
 						DataManager.CaptureMap["CURRENT_EPISODE_NUM"] = i.ToString();
 						TestRunner.RunTestSteps(driver, null, steps);
 						steps.Clear();

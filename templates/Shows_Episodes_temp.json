@@ -1,0 +1,15 @@
+{
+  "testCase": "Template_ShowsEpisodes",
+  "testId": "t1011",
+  "testSteps": [
+    {
+      "page": "Shows",
+      "name": "Select Additional Episode"
+    },
+    {
+      "page": "LiveTV",
+      "name": "Verify Video is Playing"
+    }
+  ]
+
+}
