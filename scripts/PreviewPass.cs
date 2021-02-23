@@ -63,7 +63,7 @@ namespace SeleniumProject.Function
 				byte[] bytes = Encoding.Default.GetBytes(time);
 				time = Encoding.UTF8.GetString(bytes);
 				
-				steps.Add(new TestStep(order, "Verify PVP Countdown Text", time, "verify_value", "xpath", "substring(//div[contains(@class,'pvp-expires')]/span, 1, 19)", wait));
+				steps.Add(new TestStep(order, "Verify PVP Countdown Text", time, "verify_value", "xpath", "substring(//div[contains(@class,'pvp-expires')]/span, '1', '19')", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
 			}
