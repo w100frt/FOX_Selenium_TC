@@ -48,7 +48,7 @@ namespace SeleniumProject.Function
 				} 
 				else {
 					log.Error("***Verification FAILED. Expected data [" + time + "] does not match actual data [" + subPreview + "] ***");
-					err.CreateVerificationError(step, nascarGroups[i], groups[i].GetAttribute("innerText"));
+					err.CreateVerificationError(step, time, subPreview);
 				}
 			}
 			
