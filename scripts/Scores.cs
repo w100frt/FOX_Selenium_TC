@@ -242,7 +242,7 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
-			else if (step.Name.Equals("Click NBA") || step.Name.Equals("Click NCAA BK") || || step.Name.Equals("Click NCAAW BK") step.Name.Equals("Click MLB") || step.Name.Equals("Click NASCAR") || step.Name.Equals("Click Soccer") || step.Name.Equals("Click NHL") || step.Name.Equals("Click Boxing") || step.Name.Equals("Click NCAA FB") || step.Name.Equals("Click NFL") || step.Name.Equals("Click Golf") || step.Name.Equals("Click Sport by Name") || step.Name.Equals("Verify Selected Category")) {
+			else if (step.Name.Equals("Click NBA") || step.Name.Equals("Click NCAA BK") || step.Name.Equals("Click NCAAW BK") || step.Name.Equals("Click MLB") || step.Name.Equals("Click NASCAR") || step.Name.Equals("Click Soccer") || step.Name.Equals("Click NHL") || step.Name.Equals("Click Boxing") || step.Name.Equals("Click NCAA FB") || step.Name.Equals("Click NFL") || step.Name.Equals("Click Golf") || step.Name.Equals("Click Sport by Name") || step.Name.Equals("Verify Selected Category")) {
 				if (step.Name.Equals("Verify Selected Category") || step.Name.Equals("Click Sport by Name")) {
 					data = step.Data;
 				}
@@ -254,6 +254,9 @@ namespace SeleniumProject.Function
 						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'NBA')]";
 						break;
 					case "NCAA BK" : 
+						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'NCAA BK')]";
+						break;
+					case "NCAAW BK" : 
 						xpath = "//div[contains(@class,'desktop')]//a[not(contains(@class,'more-button')) and contains(.,'NCAA BK')]";
 						break;
 					case "MLB" :
