@@ -21,6 +21,7 @@ namespace SeleniumProject.Function
 			IWebElement ele;
 			int size = 0;
 			string preview = "";
+			string subPreview = "";
 			string time = "";
 			string path = "";
 			bool live = false;
@@ -30,6 +31,7 @@ namespace SeleniumProject.Function
 			if (step.Name.Equals("Verify PVP Countdown Text")) {
 				path = "//div[contains(@class,'pvp-expires')]/span";
 				preview = driver.FindElement("xpath", path).GetAttribute("innerText");
+				subPreview = preview.Substring(0, preview.Length-1);
 				
 				if (preview.Contains("59:")) {
 					time = "Preview Pass · 59:5";
@@ -41,9 +43,13 @@ namespace SeleniumProject.Function
 				byte[] bytes = Encoding.Default.GetBytes(time);
 				time = Encoding.UTF8.GetString(bytes);
 				
-				steps.Add(new TestStep(order, "Verify PVP Countdown Text", time, "verify_value", "xpath", "substring("+ path +", 0, 4)", wait));
-				TestRunner.RunTestSteps(driver, null, steps);
-				steps.Clear();
+				if (time.Equals(subPreview)) {
+					log.Info("***Verification PASSED. Expected data [" + time + "] matches actual data [" + subPreview + "] ***");
+				} 
+				else {
+					log.Error("***Verification FAILED. Expected data [" + time + "] does not match actual data [" + subPreview + "] ***");
+					err.CreateVerificationError(step, nascarGroups[i], groups[i].GetAttribute("innerText"));
+				}
 			}
 			
 			else {
