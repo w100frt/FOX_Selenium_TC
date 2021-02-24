@@ -38,6 +38,7 @@
 		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke_NoEntity"},
 		{"page":"Scores", "name":"Click NASCAR"},
 		{"page":"Scores", "name":"Verify Selected Category", "data": "NASCAR"},
+		{"page":"Scores", "name":"Verify NASCAR Groups"},
 		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke"},
 		{"page":"Scores", "name":"Click NHL"},
 		{"page":"Scores", "name":"Verify Selected Category", "data": "NHL"},
@@ -55,6 +56,6 @@
 		{"page":"Scores", "name":"Click NCAAW BK"},
 		{"page":"Scores", "name":"Verify Selected Category", "data": "NCAAW BK"},
 		{"page":"Scores", "name":"Verify WCBK Groups"},
-		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke"}
+		{"page":"Navigation", "name":"Run Template", "data": "Scores_Smoke_NoEntity"}
 	]
 }
