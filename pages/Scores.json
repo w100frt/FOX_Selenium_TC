@@ -41,6 +41,7 @@
 		{"name":"Verify FOX Bet Logo on Nav","objectType":"verify_displayed","by": "xpath", "objectId":"//span[@alt='fox-bet']"},
 		{"name":"Verify Golf Groups","objectType":"script","by":"xpath","objectId":"Golf_Scores"},
 		{"name":"Verify League Title on Top Scores","objectType":"script","by":"xpath","objectId":"Scores"},
+		{"name":"Verify Link to Entity is Displayed","objectType":"verify_displayed","by":"xpath","objectId":"//div[contains(@class,'hidden')]//a[contains(@title,'Link to')]/img"},
 		{"name":"Verify NASCAR Groups","objectType":"script","by":"xpath","objectId":"NASCAR_Scores"},
 		{"name":"Verify Number of Score Sections","objectType":"script","by": "xpath", "objectId":"Scores"},
 		{"name":"Verify Odds Info on Chip","objectType":"script","by": "xpath", "objectId":"Scores"},
