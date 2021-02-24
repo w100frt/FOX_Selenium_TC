@@ -57,9 +57,8 @@ namespace SeleniumProject.Function
 
 			else if (step.Name.Equals("Select Additional Episode"))
 			{
-				if (DataManager.CaptureMap.ContainsKey("EPISODES " +
-                    ""))
-				{
+				//if (DataManager.CaptureMap.ContainsKey("EPISODES " +""))
+				//{
 					episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 					steps.Clear();
 
@@ -68,7 +67,7 @@ namespace SeleniumProject.Function
 					steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]", wait));
 					TestRunner.RunTestSteps(driver, null, steps);
 					steps.Clear();
-				}
+				//}
 			}
 		}
 	} 
