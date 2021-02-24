@@ -2,7 +2,7 @@
   "page": "Shows",
   "testDefinitions": [
     {
-      
+
       "name": "Click Episodes",
       "objectType": "click",
       "by": "xpath",
@@ -20,6 +20,12 @@
       "objectType": "click",
       "by": "xpath",
       "objectId": "//div[contains(@class,'desktop')]//a[contains(@href,'about')]"
+    },
+    {
+      "name": "Select Additional Episode",
+      "objectType": "script",
+      "by": "xpath",
+      "objectId": "Shows"
     }
   ]
 }
