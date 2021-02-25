@@ -99,7 +99,7 @@ namespace SeleniumProject.Function
 					if (!classList.Equals("playing"))
 					{
 						Thread.Sleep(1000);
-						ele = driver.FindElement("xpath", "//div[@aria-label='Video Player']");
+						ele = driver.FindElement("xpath", "(//div[@aria-label='Video Player'])[" + episode + "]");
 						classList = ele.GetAttribute("className");
 						classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
 						classList = classList.Substring(0, classList.IndexOf(" "));
