@@ -21,40 +21,20 @@ namespace SeleniumProject.Function
 			IWebElement ele;
 			int size = 0;
 			string preview = "";
+			string subPreview = "";
 			string time = "";
+			string path = "";
 			bool live = false;
 			List<TestStep> steps = new List<TestStep>();
 			VerifyError err = new VerifyError();
 			
 			if (step.Name.Equals("Verify PVP Countdown Text")) {
-				preview = driver.FindElement("xpath","//div[contains(@class,'pvp-expires')]/span").GetAttribute("innerText");
+				path = "//div[contains(@class,'pvp-expires')]/span";
+				preview = driver.FindElement("xpath", path).GetAttribute("innerText");
+				subPreview = preview.Substring(0, preview.Length-1);
 				
-				if (preview.Contains(":59")) {
-					time = "Preview Pass · 59:58";
-				}
-				else if (preview.Contains(":58")) {
-					time = "Preview Pass · 59:57";
-				}
-				else if (preview.Contains(":57")) {
-					time = "Preview Pass · 59:56";
-				}
-				else if (preview.Contains(":56")) {
-					time = "Preview Pass · 59:55";
-				}
-				else if (preview.Contains(":55")) {
-					time = "Preview Pass · 59:54";
-				}
-				else if (preview.Contains(":54")) {
-					time = "Preview Pass · 59:53";
-				}
-				else if (preview.Contains(":53")) {
-					time = "Preview Pass · 59:52";
-				}
-				else if (preview.Contains(":52")) {
-					time = "Preview Pass · 59:51";
-				}
-				else if (preview.Contains(":51")) {
-					time = "Preview Pass · 59:50";
+				if (preview.Contains("59:")) {
+					time = "Preview Pass · 59:5";
 				}
 				else {
 					time = step.Data;
@@ -63,9 +43,13 @@ namespace SeleniumProject.Function
 				byte[] bytes = Encoding.Default.GetBytes(time);
 				time = Encoding.UTF8.GetString(bytes);
 				
-				steps.Add(new TestStep(order, "Verify PVP Countdown Text", time, "verify_value", "xpath", "//div[contains(@class,'pvp-expires')]/span", wait));
-				TestRunner.RunTestSteps(driver, null, steps);
-				steps.Clear();
+				if (time.Equals(subPreview)) {
+					log.Info("***Verification PASSED. Expected data [" + time + "] matches actual data [" + subPreview + "] ***");
+				} 
+				else {
+					log.Error("***Verification FAILED. Expected data [" + time + "] does not match actual data [" + subPreview + "] ***");
+					err.CreateVerificationError(step, time, subPreview);
+				}
 			}
 			
 			else {

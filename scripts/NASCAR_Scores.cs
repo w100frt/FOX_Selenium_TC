@@ -18,8 +18,12 @@ namespace SeleniumProject.Function
 			string wait = step.Wait != null ? step.Wait : "";
 			List<TestStep> steps = new List<TestStep>();
 			IWebElement ele;
+			string month = "";
 			string data = "";
+			string xpath = "";
 			VerifyError err = new VerifyError();
+			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
+            OpenQA.Selenium.Interactions.Actions actions = new OpenQA.Selenium.Interactions.Actions(driver.GetDriver());
 
 			string[] nascarGroups = {"CUP SERIES", "GANDER RV & OUTDOORS TRUCK SERIES", "XFINITY SERIES"};
 			
@@ -46,6 +50,19 @@ namespace SeleniumProject.Function
 					}
 				}
 			}
+			
+			else if (step.Name.Equals("Determine Current Race")) {
+				month = DateTime.Now.Month.ToString("00");
+				// determine week of season by today's month
+				steps.Add(new TestStep(order, "Collect Bifrost Info", month, "script", "xpath", "Bifrost", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+				
+				xpath = "//div[@id='"+ DataManager.CaptureMap["IND_EVENTID"] +"']";
+				ele = driver.FindElement("xpath", xpath);
+                js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
+				log.Info("*TEMPORARY FIX* : Scroll to Score Chip " + data);
+			}		
 			
 			else {
 				throw new Exception("Test Step not found in script");
