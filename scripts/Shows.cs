@@ -74,7 +74,7 @@ namespace SeleniumProject.Function
 			{
 				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 
-				ele = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]");
+				ele = driver.FindElement("xpath", "(//div[@aria-label='Video Player'])[" + episode + "]");
 				classList = ele.GetAttribute("className");
 				classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
 				classList = classList.Substring(0, classList.IndexOf(" "));
