@@ -69,6 +69,53 @@ namespace SeleniumProject.Function
 					steps.Clear();
 				//}
 			}
-		}
-	} 
+
+			if (step.Name.Equals("Verify Video is Playing"))
+			{
+				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
+
+				ele = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]");
+				classList = ele.GetAttribute("className");
+				classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
+				classList = classList.Substring(0, classList.IndexOf(" "));
+
+				// state returns idle if overlay button is present
+				overlay = driver.FindElements("xpath", "//div[@class='overlays']/div").Count;
+				if (overlay > 1)
+				{
+					steps.Add(new TestStep(order, "Click Overlay Play Button", "", "click", "xpath", "//*[@class='overlay-play-button']", wait));
+					TestRunner.RunTestSteps(driver, null, steps);
+					steps.Clear();
+					ele = driver.FindElement("xpath", "//div[@aria-label='Video Player']");
+					classList = ele.GetAttribute("className");
+					classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
+					classList = classList.Substring(0, classList.IndexOf(" "));
+				}
+
+				// check video state. if not playing, wait and check again for 10 seconds
+				do
+				{
+					log.Info("Video State: " + classList);
+					if (!classList.Equals("playing"))
+					{
+						Thread.Sleep(1000);
+						ele = driver.FindElement("xpath", "//div[@aria-label='Video Player']");
+						classList = ele.GetAttribute("className");
+						classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
+						classList = classList.Substring(0, classList.IndexOf(" "));
+					}
+				}
+				while (!classList.Equals("playing") && attempts-- > 0);
+				if (classList.Equals("playing"))
+				{
+					log.Info("Verification PASSED. Video returned " + classList);
+				}
+				else
+				{
+					log.Error("***Verification FAILED. Video returned " + classList + " ***");
+					err.CreateVerificationError(step, "playing", classList);
+					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
+				}
+			}
+		} 
 }
