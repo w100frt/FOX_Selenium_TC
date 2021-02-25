@@ -49,7 +49,7 @@ namespace SeleniumProject.Function
 					{
 						steps.Add(new TestStep(order, "Run Template", "Shows_Episodes_temp", "run_template", "xpath", "", wait));
 						DataManager.CaptureMap["CURRENT_EPISODE_NUM"] = i.ToString();
-						TestRunner.RunTestSteps(driver, null, steps); 
+						TestRunner.RunTestSteps(driver, null, steps);
 						steps.Clear();
 					}
 				}
@@ -59,14 +59,14 @@ namespace SeleniumProject.Function
 			{
 				//if (DataManager.CaptureMap.ContainsKey("EPISODES " +""))
 				//{
-					episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
-					steps.Clear();
+				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
+				steps.Clear();
 
-					episodeNumber = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]").GetAttribute("aria-label");
+				episodeNumber = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]").GetAttribute("aria-label");
 
-					steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]", wait));
-					TestRunner.RunTestSteps(driver, null, steps);
-					steps.Clear();
+				steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
 				//}
 			}
 
@@ -117,5 +117,6 @@ namespace SeleniumProject.Function
 					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
 				}
 			}
-		} 
+		}
+	}
 }
