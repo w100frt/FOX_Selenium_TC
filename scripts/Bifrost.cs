@@ -21,7 +21,7 @@ namespace SeleniumProject.Function
 			long order = step.Order;
 			string wait = step.Wait != null ? step.Wait : "";
 			List<TestStep> steps = new List<TestStep>();
-			Dictionary<string, string> leaderboard = new Dictionary<string, string>();
+			string leaderboard = "";
 			IWebElement ele;
 			VerifyError err = new VerifyError();
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
@@ -45,7 +45,8 @@ namespace SeleniumProject.Function
 					DataManager.CaptureMap["IND_CHANNEL"] = def.Value<string>("tvStation");
 					
 					if (def.ContainsKey("leaderboard")) {
-						leaderboard = (Dictionary<string, string>)(def.SelectToken("leaderboard") as JArray).First;
+						leaderboard = def.Value<string>("$..leaderboard.title");
+						//(string) def.SelectToken("$..leaderboard.title");
 						log.Info(leaderboard);
 					}
 				}
