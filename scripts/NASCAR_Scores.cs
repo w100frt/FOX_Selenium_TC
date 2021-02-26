@@ -25,9 +25,9 @@ namespace SeleniumProject.Function
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
             OpenQA.Selenium.Interactions.Actions actions = new OpenQA.Selenium.Interactions.Actions(driver.GetDriver());
 
-			string[] nascarGroups = {"CUP SERIES", "GANDER RV & OUTDOORS TRUCK SERIES", "XFINITY SERIES"};
+			string[] nascarGroups = {"CUP SERIES", "CAMPING WORLD TRUCK SERIES", "XFINITY SERIES"};
 			
-			if (step.Name.Equals("Verify Golf Groups")) {
+			if (step.Name.Equals("Verify NASCAR Groups")) {
 				data = "//div[contains(@class,'scores-home-container')]//div[contains(@class,'active')]//ul";
 				steps.Add(new TestStep(order, "Open Conference Dropdown", "", "click", "xpath", "//a[@class='dropdown-menu-title']", wait));
 				steps.Add(new TestStep(order, "Verify Dropdown is Displayed", "", "verify_displayed", "xpath", data, wait));
