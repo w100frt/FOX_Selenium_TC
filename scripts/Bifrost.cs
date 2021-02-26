@@ -45,7 +45,7 @@ namespace SeleniumProject.Function
 					DataManager.CaptureMap["IND_CHANNEL"] = def.Value<string>("tvStation");
 					
 					if (def.ContainsKey("leaderboard")) {
-						leaderboard = def.Value<Dictionary<string, string>>("leaderboard");
+						leaderboard = (Dictionary<string, string>)(def.SelectToken("leaderboard") as JArray).First;
 						log.Info(leaderboard);
 					}
 				}
