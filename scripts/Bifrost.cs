@@ -42,6 +42,10 @@ namespace SeleniumProject.Function
 					DataManager.CaptureMap["IND_LOC"] = def.Value<string>("subtitle2");
 					DataManager.CaptureMap["IND_TIME"] = def.Value<string>("eventTime");
 					DataManager.CaptureMap["IND_CHANNEL"] = def.Value<string>("tvStation");
+					
+					if (def.ContainsKey("leaderboard")) {
+						log.Info("True");
+					}
 				}
 			}
 			
