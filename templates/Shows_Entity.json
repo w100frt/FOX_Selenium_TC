@@ -29,6 +29,10 @@
 		},
 		{
 			"page": "Shows_Episodes",
+			"name": "Capture Episode Title"
+		}
+		/*{
+			"page": "Shows_Episodes",
 			"name": "Click Video Play Button"
 		},
 		{
@@ -68,6 +72,6 @@
 		{
 			"page": "Shows_About",
 			"name": "Verify Description Displayed"
-		}
+		}*/
 	]
 }

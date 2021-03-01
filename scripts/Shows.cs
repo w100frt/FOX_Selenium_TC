@@ -27,12 +27,19 @@ namespace SeleniumProject.Function
 			string edit = "";
 			string top = "";
 			string episodeNumber = "";
+			string title = "";
 			bool topTitle = true;
 			bool live = false;
 			List<TestStep> steps = new List<TestStep>();
 			VerifyError err = new VerifyError();
 
-			if (step.Name.Equals("Capture Number of Additional Episodes"))
+			if (step.Name.Equals("Capture Episode Title"))
+            {
+				title = driver.FindElements("xpath", "//div[contains(@class,'fs-21.pdg-top-20')]");
+				log.Info("Episode Title: " + title);
+            }
+			
+			else if (step.Name.Equals("Capture Number of Additional Episodes"))
 			{
 				size = driver.FindElements("xpath", "//div[contains(@class,'video-overlay')]").Count;
 
