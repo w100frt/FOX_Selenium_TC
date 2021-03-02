@@ -23,7 +23,6 @@ namespace SeleniumProject.Function
 			int episode = 0;
 			int attempts = 10;
 			string classList = "";
-			string title = "";
 			string edit = "";
 			string top = "";
 			string episodeNumber = "";
@@ -35,7 +34,7 @@ namespace SeleniumProject.Function
 
 			if (step.Name.Equals("Capture Episode Title"))
             {
-				title = driver.FindElements("xpath").getAttribute("//div[contains(@class,'fs-21.pdg-top-20')]");
+				string title = driver.FindElements("xpath").getAttribute("//div[contains(@class,'fs-21.pdg-top-20')]");
 				log.Info("Episode Title: " + title);
             }
 			
