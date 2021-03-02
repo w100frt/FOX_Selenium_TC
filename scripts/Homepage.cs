@@ -96,7 +96,7 @@ namespace SeleniumProject.Function
 				log.Info("Storing window handle as " + DataManager.CaptureMap["WINDOW_HANDLE"]);
 			} 
 			
-			else if (step.Name.Equals("Switch to New Tab")) {
+			else if (step.Name.Equals("Switch To New Tab")) {
 				ReadOnlyCollection<string> windowHandles = driver.GetDriver().WindowHandles;  
 				
 				log.Info("Total Count of Handles: " + windowHandles.Count);
