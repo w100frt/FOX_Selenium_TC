@@ -6,6 +6,7 @@
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Navigation", "name":"Capture Window Handle"},
 		{"page":"Navigation", "name":"Navigate to External Scorestrip by ENV"},
 		{"page":"Scorestrip", "name":"Verify Scorechip Count", "data" : "5"},
 		{"page":"Scorestrip", "name":"Click All Scores Button"},
