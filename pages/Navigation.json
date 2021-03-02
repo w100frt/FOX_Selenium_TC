@@ -2,6 +2,7 @@
 	"page":"Navigation",
 	"testDefinitions":[
 		{"name":"Capture Current URL","objectType":"script","by":"xpath","objectId":"Accounts"},
+		{"name":"Capture Window Handle","objectType":"script","by":"xpath","objectId":"Navigation"},
 		{"name":"Click Sign In","objectType":"script","by":"xpath","objectId":"Accounts"},
 		{"name":"Click Explore","objectType":"script","by":"xpath","objectId":"Explore"},
 		{"name":"Click Outside Explore Area","objectType":"click","by":"xpath","objectId":"//div[@id='account-overlay']"},

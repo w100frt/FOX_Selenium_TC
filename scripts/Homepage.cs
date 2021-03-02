@@ -91,8 +91,23 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
+			else if (step.Name.Equals("Capture Window Handle")) {
+				DataManager.CaptureMap["WINDOW_HANDLE"] = driver.GetDriver().CurrentWindowHandle;
+				log.Info("Storing window handle as " + DataManager.CaptureMap["WINDOW_HANDLE"]);
+			} 
+			
 			else if (step.Name.Equals("Switch to New Tab")) {
-				driver.GetDriver().SwitchTo().Window(driver.GetDriver().WindowHandles.Last());
+				ReadOnlyCollection<string> windowHandles = driver.WindowHandles;  
+				
+				log.Info("Total Count of Handles: " + windowHandles.Count);
+				foreach(string handle in windowHandles) {
+					log.Info("Current Handle : " + handle );
+					if (!handle.Equals(DataManager.CaptureMap["WINDOW_HANDLE"])) {
+						DataManager.CaptureMap["NEW_WINDOW_HANDLE"] = handle;
+					}
+				}
+				driver.GetDriver().SwitchTo().Window(DataManager.CaptureMap["NEW_WINDOW_HANDLE"]);
+				log.Info("Storing new window handle as " + DataManager.CaptureMap["NEW_WINDOW_HANDLE"] + " and switching to new window."); 
 			} 
 			
 			else {
