@@ -77,10 +77,10 @@ namespace SeleniumProject.Function
 			}
 			
 			else if (step.Name.Equals("Navigate to External Scorestrip by ENV")) {
-				if(TestParameters.GLOBAL_APP_URL.Equals("dev")) {
+				if(TestParameters.GLOBAL_ENV.Equals("dev")) {
 					url = "dev-";
 				} 
-				else if (TestParameters.GLOBAL_APP_URL.Equals("stg")) {
+				else if (TestParameters.GLOBAL_ENV.Equals("stg")) {
 					url = "stage-";
 				}
 					
