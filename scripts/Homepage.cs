@@ -91,6 +91,10 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
+			else if (step.Name.Equals("Switch to New Tab")) {
+				driver.SwitchTo().Window(driver.WindowHandles.Last());
+			}
+			
 			else {
 				throw new Exception("Test Step not found in script");
 			}
