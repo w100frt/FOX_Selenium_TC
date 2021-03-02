@@ -97,7 +97,7 @@ namespace SeleniumProject.Function
 			} 
 			
 			else if (step.Name.Equals("Switch to New Tab")) {
-				ReadOnlyCollection<string> windowHandles = driver.WindowHandles;  
+				ReadOnlyCollection<string> windowHandles = driver.GetDriver().WindowHandles;  
 				
 				log.Info("Total Count of Handles: " + windowHandles.Count);
 				foreach(string handle in windowHandles) {
