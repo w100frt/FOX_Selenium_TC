@@ -76,6 +76,21 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
+			else if (step.Name.Equals("Navigate to External Scorestrip by ENV")) {
+				if(TestParameters.GLOBAL_APP_URL.Equals("dev")) {
+					url = "dev-";
+				} 
+				else if (TestParameters.GLOBAL_APP_URL.Equals("stg")) {
+					url = "stage-";
+				}
+					
+				url = "https://" + url +"statics.foxsports.com/static/orion/scorestrip/index.html";			
+				
+				steps.Add(new TestStep(order, "Navigate to " + url, url, "navigate_to", "", "", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
 			else {
 				throw new Exception("Test Step not found in script");
 			}

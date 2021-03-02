@@ -11,6 +11,7 @@
 		{"name":"Choose Top Player by Sport","objectType":"script","by":"xpath","objectId":"Top_Players"},
 		{"name":"Get or Compare Device ID","objectType":"script","by":"xpath","objectId":"Accounts"},
 		{"name":"Navigate to Account","objectType":"script","by":"xpath","objectId":"Accounts"},
+		{"name":"Navigate to External Scorestrip by ENV","objectType":"script","by":"xpath","objectId":"Homepage"},
 		{"name":"Navigate to Home","objectType":"click","by":"xpath","objectId":"//a[@href='/']"},
 		{"name":"Navigate to Live TV","objectType":"click","by":"xpath","objectId":"//a[@href='/live']"},
 		{"name":"Navigate to Scores","objectType":"click","by":"xpath","objectId":"//a[@href='/scores']"},
