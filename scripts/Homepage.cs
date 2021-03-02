@@ -92,7 +92,7 @@ namespace SeleniumProject.Function
 			}
 			
 			else if (step.Name.Equals("Switch to New Tab")) {
-				driver.SwitchTo().Window(driver.WindowHandles.Last());
+				driver.GetDriver().SwitchTo().Window(driver.GetDriver().WindowHandles.Last());
 			}
 			
 			else {
