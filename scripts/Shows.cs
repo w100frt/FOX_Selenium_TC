@@ -35,7 +35,7 @@ namespace SeleniumProject.Function
 
 			if (step.Name.Equals("Capture Episode Title"))
             {
-				string eTitle = driver.FindElement("xpath","//div[contains(@class,'pdg-top-20')])[" + episode + "]").getText();
+				string eTitle[] = driver.FindElement("xpath","//div[contains(@class,'pdg-top-20')])[" + episode + "]").getText();
 				log.Info("Episode Title: " + eTitle);
             }
 			
