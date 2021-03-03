@@ -59,7 +59,7 @@
 		{"page":"Explore", "name":"Click NBA"},
 		{"page":"Explore", "name":"Verify Explore Header Text", "data":"NBA"},
 		{"page":"Explore", "name":"Verify Count of Teams or Players", "data":"30"},
-		{"page":"Explore", "name":"Click Back Arrow"}
+		{"page":"Explore", "name":"Click Back Arrow"},
 		{"page":"Explore", "name":"Verify Selected Explore Pane", "data":"SPORTS & TEAMS"}
 	]
 }
