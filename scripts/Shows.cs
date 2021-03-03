@@ -6,7 +6,6 @@ using SeleniumProject;
 using OpenQA.Selenium;
 using log4net;
 using System.Collections.ObjectModel;
-package getText;
 
 namespace SeleniumProject.Function
 {
@@ -21,7 +20,7 @@ namespace SeleniumProject.Function
 			IWebElement ele;
 			int overlay;
 			int size = 0;
-			int episode = 0;
+			int episode = 1;
 			int attempts = 10;
 			string classList = "";
 			string edit = "";
@@ -35,7 +34,8 @@ namespace SeleniumProject.Function
 
 			if (step.Name.Equals("Capture Episode Title"))
             {
-				string eTitle[] = driver.FindElement("xpath","//div[contains(@class,'pdg-top-20')])[" + episode + "]").getText();
+				string eTitle = driver.FindElement("xpath","(//div[contains(@class,'pdg-top-20')])[" + episode + "]").GetAttribute("innerText");
+				DataManager.CaptureMap["TITLE"] = eTitle;
 				log.Info("Episode Title: " + eTitle);
             }
 			
