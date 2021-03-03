@@ -21,6 +21,7 @@ namespace SeleniumProject.Function
 			long order = step.Order;
 			string wait = step.Wait != null ? step.Wait : "";
 			List<TestStep> steps = new List<TestStep>();
+			string leaderboard = "";
 			IWebElement ele;
 			VerifyError err = new VerifyError();
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
@@ -42,6 +43,12 @@ namespace SeleniumProject.Function
 					DataManager.CaptureMap["IND_LOC"] = def.Value<string>("subtitle2");
 					DataManager.CaptureMap["IND_TIME"] = def.Value<string>("eventTime");
 					DataManager.CaptureMap["IND_CHANNEL"] = def.Value<string>("tvStation");
+					
+					if (def.ContainsKey("leaderboard")) {
+						//(string) = def.Value<string>("$..leaderboard.title");
+						leaderboard = def.SelectToken("$..leaderboard.title").ToString();
+						log.Info(leaderboard);
+					}
 				}
 			}
 			

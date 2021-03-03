@@ -76,6 +76,40 @@ namespace SeleniumProject.Function
 				steps.Clear();
 			}
 			
+			else if (step.Name.Equals("Navigate to External Scorestrip by ENV")) {
+				if(TestParameters.GLOBAL_ENV.Equals("dev")) {
+					url = "dev-";
+				} 
+				else if (TestParameters.GLOBAL_ENV.Equals("stg")) {
+					url = "stage-";
+				}
+					
+				url = "https://" + url +"statics.foxsports.com/static/orion/scorestrip/index.html";			
+				
+				steps.Add(new TestStep(order, "Navigate to " + url, url, "navigate_to", "", "", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
+			else if (step.Name.Equals("Capture Window Handle")) {
+				DataManager.CaptureMap["WINDOW_HANDLE"] = driver.GetDriver().CurrentWindowHandle;
+				log.Info("Storing window handle as " + DataManager.CaptureMap["WINDOW_HANDLE"]);
+			} 
+			
+			else if (step.Name.Equals("Switch To New Tab")) {
+				ReadOnlyCollection<string> windowHandles = driver.GetDriver().WindowHandles;  
+				
+				log.Info("Total Count of Handles: " + windowHandles.Count);
+				foreach(string handle in windowHandles) {
+					log.Info("Current Handle : " + handle );
+					if (!handle.Equals(DataManager.CaptureMap["WINDOW_HANDLE"])) {
+						DataManager.CaptureMap["NEW_WINDOW_HANDLE"] = handle;
+					}
+				}
+				driver.GetDriver().SwitchTo().Window(DataManager.CaptureMap["NEW_WINDOW_HANDLE"]);
+				log.Info("Storing new window handle as " + DataManager.CaptureMap["NEW_WINDOW_HANDLE"] + " and switching to new window."); 
+			} 
+			
 			else {
 				throw new Exception("Test Step not found in script");
 			}
