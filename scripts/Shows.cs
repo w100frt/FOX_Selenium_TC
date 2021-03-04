@@ -68,8 +68,8 @@ namespace SeleniumProject.Function
 				//{
 				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 				steps.Clear();
-
-				episodeNumber = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]").GetAttribute("aria-label");
+				string eTitle = DataManager.CaptureMap["TITLE"];
+				episodeNumber = driver.FindElement("xpath", "//div[@class='mgn-btm-35'][div[contains(@class,'fs-21') and contains(.,"+eTitle+")]]//div[@aria-label='Video Player']").GetAttribute("aria-label");
 
 				steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
@@ -80,8 +80,9 @@ namespace SeleniumProject.Function
 			if (step.Name.Equals("Verify Video is Playing"))
 			{
 				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
+				string eTitle = DataManager.CaptureMap["TITLE"];
 
-				ele = driver.FindElement("xpath", "(//div[@aria-label='Video Player'])[" + episode + "]");
+				ele = driver.FindElement("xpath", "//div[@class='mgn-btm-35'][div[contains(@class,'fs-21') and contains(.," + eTitle + ")]]//div[@aria-label='Video Player']");
 				classList = ele.GetAttribute("className");
 				classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
 				classList = classList.Substring(0, classList.IndexOf(" "));

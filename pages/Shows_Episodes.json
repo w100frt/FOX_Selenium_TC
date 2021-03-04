@@ -37,6 +37,12 @@
 			"objectType": "script",
 			"by": "xpath",
 			"objectId": "Shows"
+		},
+		{
+			"name": "Verify Video is Playing",
+			"objectType": "script",
+			"by": "xpath",
+			"objectId": "Shows"
 		}
 	]
 }

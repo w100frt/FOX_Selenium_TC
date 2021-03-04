@@ -3,12 +3,24 @@
   "testId": "t1011",
   "testSteps": [
     {
-      "page": "Shows",
+      "page": "Shows_Episodes",
+      "name": "Capture Episode Title"
+    },
+    {
+      "page": "Shows_Episodes",
       "name": "Select Additional Episode"
     },
     {
-      "page": "Shows",
+      "page": "Shows_Episodes",
       "name": "Verify Video is Playing"
+    },
+    {
+      "page": "LiveTV",
+      "name": "Verify Pause Button on Video"
+    },
+    {
+      "page": "LiveTV",
+      "name": "Verify Video is Paused"
     }
   ]
 

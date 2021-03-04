@@ -3,7 +3,6 @@
 	"testId":"t1001",
 	"testSteps": [
 		{
-
 			"page": "Shows_Clips",
 			"name": "Verify Number of Clips",
 			"data": "100"
@@ -18,7 +17,7 @@
 			"page": "Shows_Episodes",
 			"name": "Verify Videos Is Displayed"
 		},
-		/*{
+		{
 			"page": "Shows_Episodes",
 			"name": "Click Sign In"
 		},
@@ -26,30 +25,10 @@
 			"page": "Navigation",
 			"name": "Run Template",
 			"data": "Optimum_Provider_SignIn"
-		},*/
-		{
-			"page": "Shows_Episodes",
-			"name": "Capture Episode Title"
-		}
-		/*{
-			"page": "Shows_Episodes",
-			"name": "Click Video Play Button"
-		},
-		{
-			"page": "LiveTV",
-			"name": "Verify Video is Playing"
 		},
 		{
 			"page": "LiveTV",
 			"name": "Verify Pause Button on Video"
-		},
-		{
-			"page": "LiveTV",
-			"name": "Click Video Pause Button"
-		},
-		{
-			"page": "LiveTV",
-			"name": "Verify Video is Paused"
 		},
 		{
 			"page": "Shows_Episodes",
@@ -72,6 +51,6 @@
 		{
 			"page": "Shows_About",
 			"name": "Verify Description Displayed"
-		}*/
+		}
 	]
 }
