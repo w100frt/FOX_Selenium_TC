@@ -12,6 +12,10 @@
     },
     {
       "page": "Shows_Episodes",
+      "name": "Click Video Play Button"
+    },
+    {
+      "page": "Shows_Episodes",
       "name": "Verify Video is Playing"
     },
     {
@@ -21,11 +25,8 @@
     {
       "page": "LiveTV",
       "name": "Verify Video is Paused"
-    },
-    {
-      "page": "Shows_Episodes",
-      "name": "Click Video Play Button"
     }
+    
   ]
 
 }
