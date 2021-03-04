@@ -21,6 +21,10 @@
     {
       "page": "LiveTV",
       "name": "Verify Video is Paused"
+    },
+    {
+      "page": "Shows_Episodes",
+      "name": "Click Video Play Button"
     }
   ]
 
