@@ -69,8 +69,7 @@ namespace SeleniumProject.Function
 				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 				steps.Clear();
 				string eTitle = DataManager.CaptureMap["TITLE"];
-				log.Info("Episode Title r2: " + eTitle);
-				episodeNumber = driver.FindElement("xpath", "//div[@class='mgn-btm-35'][div[contains(@class,'fs-21') and contains(.,"+eTitle+")]]//div[@aria-label='Video Player']").GetAttribute("aria-label");
+				episodeNumber = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]").GetAttribute("aria-label");
 
 				steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
