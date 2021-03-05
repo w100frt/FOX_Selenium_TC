@@ -27,10 +27,6 @@
 			"data": "Optimum_Provider_SignIn"
 		},
 		{
-			"page": "LiveTV",
-			"name": "Verify Pause Button on Video"
-		},
-		{
 			"page": "Shows_Episodes",
 			"name": "Capture Number of Additional Episodes"
 		},

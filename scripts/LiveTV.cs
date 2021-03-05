@@ -71,7 +71,7 @@ namespace SeleniumProject.Function
 					err.CreateVerificationError(step, "playing", classList);
 					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
 				}
-			}
+			} 
 			
 			else if (step.Name.Equals("Verify Video is Paused")) {
 				ele = driver.FindElement("xpath", "//div[@aria-label='Video Player']");
