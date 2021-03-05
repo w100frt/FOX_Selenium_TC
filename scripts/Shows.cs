@@ -82,7 +82,7 @@ namespace SeleniumProject.Function
 				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 				string eTitle = DataManager.CaptureMap["TITLE"];
 
-				ele = driver.FindElement("xpath", "//div[@class='mgn-btm-35'][div[contains(@class,'fs-21') and contains(.," + eTitle + ")]]//div[@aria-label='Video Player']");
+				ele = driver.FindElement("xpath", "//div[@class='mgn-btm-35'][//div[contains(@class,'fs-21') and contains(.," + eTitle + ")]]//div[@aria-label='Video Player']");
 				classList = ele.GetAttribute("className");
 				classList = classList.Substring(classList.IndexOf("jw-state-") + 9);
 				classList = classList.Substring(0, classList.IndexOf(" "));
