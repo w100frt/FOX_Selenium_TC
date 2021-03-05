@@ -33,6 +33,12 @@
 			"objectId": "Shows"
 		},
 		{
+			"name": "Select Additional Episode",
+			"objectType": "script",
+			"by": "xpath",
+			"objectId": "Shows"
+		},
+		{
 			"name": "Capture Episode Title",
 			"objectType": "script",
 			"by": "xpath",
