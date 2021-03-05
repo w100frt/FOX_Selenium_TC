@@ -12,10 +12,6 @@
     },
     {
       "page": "Shows_Episodes",
-      "name": "Click Video Play Button"
-    },
-    {
-      "page": "Shows_Episodes",
       "name": "Verify Video is Playing"
     },
     {
