@@ -110,6 +110,11 @@ namespace SeleniumProject.Function
 				log.Info("Storing new window handle as " + DataManager.CaptureMap["NEW_WINDOW_HANDLE"] + " and switching to new window."); 
 			} 
 			
+			else if (step.Name.Equals("Close Current Tab")) {
+				driver.GetDriver().Close();
+				log.Info("Closing " + DataManager.CaptureMap["NEW_WINDOW_HANDLE"]); 
+			} 
+			
 			else {
 				throw new Exception("Test Step not found in script");
 			}
