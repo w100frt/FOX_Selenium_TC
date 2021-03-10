@@ -34,6 +34,7 @@ namespace SeleniumProject.Function
 
 			if (step.Name.Equals("Capture Episode Title"))
             {
+				episode = Int32.Parse(DataManager.CaptureMap["CURRENT_EPISODE_NUM"]);
 				string eTitle = driver.FindElement("xpath","(//div[contains(@class,'pdg-top-20')])[" + episode + "]").GetAttribute("innerText");
 				DataManager.CaptureMap["TITLE"] = eTitle;
 				log.Info("Episode Title: " + eTitle);
