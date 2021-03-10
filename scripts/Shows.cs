@@ -43,7 +43,10 @@ namespace SeleniumProject.Function
 			else if (step.Name.Equals("Capture Number of Additional Episodes"))
 			{
 				size = driver.FindElements("xpath", "//div[contains(@class,'video-overlay')]").Count;
-
+				if(size == 0)
+                {
+					log.Infor("***THERE ARE NO EPIOSODES POSTED***")
+                }
 				DataManager.CaptureMap["EPISODES"] = size.ToString();
 				log.Info("Number of additional episodes: " + size);
 			}
