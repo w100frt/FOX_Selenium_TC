@@ -19,24 +19,24 @@
     },
     {
       "page": "Explore",
-      "name": "Click Speak for Yourself"
+      "name": "Click Friday Night SmackDown"
     },
     {
       "page": "Entity",
       "name": "Verify Header Text",
-      "data": "SPEAK FOR YOURSELF"
+      "data": "WWE FRIDAY NIGHT SMACKDOWN"
     },
-    /*{
+    {
 
       "page": "Shows",
       "name": "Click Episodes"
-    },*/
+    },
     {
 
       "page": "Shows_Episodes",
       "name": "Verify Videos Is Displayed"
     },
-    /*{
+    {
       "page": "Shows_Episodes",
       "name": "Click Sign In"
     },
@@ -44,7 +44,7 @@
       "page": "Navigation",
       "name": "Run Template",
       "data": "Optimum_Provider_SignIn"
-    },*/
+    },
     {
       "page": "Shows_Episodes",
       "name": "Capture Number of Additional Episodes"
