@@ -54,6 +54,30 @@
 			"objectType": "click",
 			"by": "xpath",
 			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'SmackDown')]]"
+		},
+		{
+			"name": "Click NASCAR Race Hub",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"
+		},
+		{
+			"name": "Click NASCAR Weekend Edition",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"
+		},
+		{
+			"name": "Click MLB Whiparound",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Whiparound')]]"
+		},
+		{
+			"name": "Click WWE Backstage",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Backstage')]]"
 		}
 	]
 }
