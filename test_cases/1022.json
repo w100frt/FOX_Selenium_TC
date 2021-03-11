@@ -1,7 +1,7 @@
 {
-  "testCase": "Show: Episodes - Speak for Yourself",
+  "testCase": "Show: Episodes - First Things First",
   "env": "stg",
-  "testId": "1021",
+  "testId": "1022",
   "testRail": "7769792",
   "testView": "desktop",
   "testSteps": [
@@ -19,12 +19,12 @@
     },
     {
       "page": "Explore",
-      "name": "Click Speak for Yourself"
+      "name": "Click First Things First"
     },
     {
       "page": "Entity",
       "name": "Verify Header Text",
-      "data": "SPEAK FOR YOURSELF"
+      "data": "FIRST THINGS FIRST"
     },
     {
       "page": "Shows",

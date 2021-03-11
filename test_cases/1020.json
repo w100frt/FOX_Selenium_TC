@@ -1,7 +1,7 @@
 {
-  "testCase": "Show: Episodes - Speak for Yourself",
+  "testCase": "Show: Episodes - Fox Bet Live",
   "env": "stg",
-  "testId": "1021",
+  "testId": "1020",
   "testRail": "7769792",
   "testView": "desktop",
   "testSteps": [
@@ -19,12 +19,12 @@
     },
     {
       "page": "Explore",
-      "name": "Click Speak for Yourself"
+      "name": "Click Fox Bet Live"
     },
     {
       "page": "Entity",
       "name": "Verify Header Text",
-      "data": "SPEAK FOR YOURSELF"
+      "data": "FOX BET LIVE"
     },
     {
       "page": "Shows",
