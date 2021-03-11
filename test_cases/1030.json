@@ -1,0 +1,55 @@
+{
+  "testCase": "Show: Episodes - NFL Kickoff",
+  "env": "stg",
+  "testId": "1030",
+  "testRail": "7769792",
+  "testView": "desktop",
+  "testSteps": [
+    {
+      "page": "Navigation",
+      "name": "Open Browser"
+    },
+    {
+      "page": "Navigation",
+      "name": "Click Explore"
+    },
+    {
+      "page": "Explore",
+      "name": "Click Shows"
+    },
+    {
+      "page": "Explore",
+      "name": "Click NFL Kickoff"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Header Text",
+      "data": "FOX NFL KICKOFF"
+    },
+    {
+      "page": "Shows",
+      "name": "Click Episodes"
+    },
+    {
+      "page": "Shows_Episodes",
+      "name": "Verify Videos Is Displayed"
+    },
+    {
+      "page": "Shows_Episodes",
+      "name": "Click Sign In"
+    },
+    {
+      "page": "Navigation",
+      "name": "Run Template",
+      "data": "Optimum_Provider_SignIn"
+    },
+    {
+      "page": "Shows_Episodes",
+      "name": "Capture Number of Additional Episodes"
+    },
+    {
+      "page": "Shows_Episodes",
+      "name": "Select Additional Episodes"
+    }
+  ]
+}
