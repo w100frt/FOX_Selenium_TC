@@ -78,6 +78,18 @@
 			"objectType": "click",
 			"by": "xpath",
 			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Backstage')]]"
+		},
+		{
+			"name": "Click Big Noon Kickoff",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Big Noon')]]"
+		},
+		{
+			"name": "Click NFL Kickoff",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NFL Kickoff')]]"
 		}
 	]
 }
