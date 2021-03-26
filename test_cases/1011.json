@@ -19,11 +19,6 @@
     },
     {
       "page": "Explore",
-      "name": "Verify Count of Shows",
-      "data": "12"
-    },
-    {
-      "page": "Explore",
       "name": "Click WWE SmackDown"
     },
     {
@@ -61,11 +56,6 @@
     {
       "page": "Toasts",
       "name": "Click Yes to Remove Favorite"
-    },
-    {
-      "page": "Entity",
-      "name": "Verify Selected Tab Text",
-      "data": "FEED"
     },
     {
       "page": "Entity",

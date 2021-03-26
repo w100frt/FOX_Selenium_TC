@@ -3,6 +3,11 @@
 	"testId":"t1001",
 	"testSteps": [
 		{
+			"page": "Entity",
+			"name": "Verify Selected Tab Text",
+			"data": "VIDEOS"
+		},
+		{
 			"page": "Shows_Clips",
 			"name": "Verify Number of Clips",
 			"data": "25"
@@ -38,7 +43,7 @@
 
 			"page": "Shows",
 			"name": "Click Social"
-		}/*,
+		} /*,
 		{
 
 			"page": "Shows",
