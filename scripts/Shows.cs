@@ -75,7 +75,7 @@ namespace SeleniumProject.Function
 				string eTitle = DataManager.CaptureMap["TITLE"];
 				episodeNumber = driver.FindElement("xpath", "(//div[contains(@class,'video-overlay')])[1]").GetAttribute("aria-label");
 
-				steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[" + episode + "]", wait));
+				steps.Add(new TestStep(order, "Select Episode " + episode + " - " + episodeNumber, "", "click", "xpath", "(//div[contains(@class,'video-overlay')])[1]", wait));
 				TestRunner.RunTestSteps(driver, null, steps);
 				steps.Clear();
 				//}
