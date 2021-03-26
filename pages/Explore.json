@@ -41,7 +41,7 @@
 		{"name":"Verify Top Search Result Subtext","objectType":"verify_value","by":"xpath","objectId":"(//div[contains(@class,'entity-list-row-content')])[1]//div[contains(@class,'subtitle')]"},
 		{"name":"Click The Herd","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'The Herd')]]"},
 		{"name":"Click First Things First","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'First Things First')]]"},
-		{"name":"Click Fox Bet Live","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Fox Bet Live')]]"},
+		{"name":"Click Fox Bet Live","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Bet Live')]]"},
 		{"name":"Click Speak for Yourself","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Speak for Yourself')]]"},
 		{
 			"name": "Click Undisputed",
