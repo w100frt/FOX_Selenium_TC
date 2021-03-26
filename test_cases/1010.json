@@ -1,0 +1,77 @@
+{
+
+  {
+    "testCase": "Explore: Show - NASCAR Weekend Edition",
+    "env": "stg",
+    "testId": "1010",
+    "testRail": "7769792",
+    "testView": "desktop",
+    "testSteps": [
+      {
+        "page": "Navigation",
+        "name": "Open Browser"
+      },
+      {
+        "page": "Navigation",
+        "name": "Click Explore"
+      },
+      {
+        "page": "Explore",
+        "name": "Click Shows"
+      },
+      {
+        "page": "Explore",
+        "name": "Click NASCAR Weekend Edtion"
+      },
+      {
+        "page": "Entity",
+        "name": "Verify Header Text",
+        "data": "NASCAR RACE HUB WEEKEND EDITION"
+      },
+      {
+        "page": "Entity",
+        "name": "Verify Header Divider"
+      },
+      {
+        "page": "Entity",
+        "name": "Verify Add or Remove Favorite Button Text",
+        "data": "ADD TO FAVORITES"
+      },
+      {
+        "page": "Entity",
+        "name": "Click Add or Remove Favorite Button"
+      },
+      {
+        "page": "Toasts",
+        "name": "Verify Toast Message Text",
+        "data": "NASCAR Race Hub Weekend Edition - Added to your favorites."
+      },
+      {
+        "page": "Entity",
+        "name": "Verify Add or Remove Favorite Button Text",
+        "data": "ADDED TO FAVORITES"
+      },
+      {
+        "page": "Entity",
+        "name": "Click Add or Remove Favorite Button"
+      },
+      {
+        "page": "Toasts",
+        "name": "Click Yes to Remove Favorite"
+      },
+      {
+        "page": "Entity",
+        "name": "Verify Add or Remove Favorite Button Text",
+        "data": "ADD TO FAVORITES"
+      },
+      {
+        "page": "Entity",
+        "name": "Verify Header Subtext Exists"
+      },
+      {
+        "page": "Navigation",
+        "name": "Run Template",
+        "data": "Shows_Entity"
+      }
+    ]
+  }

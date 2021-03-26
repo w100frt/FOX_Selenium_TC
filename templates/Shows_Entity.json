@@ -1,10 +1,57 @@
 {
 	"testCase":"Template_ShowsEntity",
 	"testId":"t1001",
-	"testSteps":[
-	{"page":"Shows_Clips","name":"Verify Number of Clips","data":"100"},
-	{"page":"Shows","name":"Click Episodes"},
-	{"page":"Shows_Episodes","name":"Verify Videos Is Displayed"},
-	{"page":"Shows","name":"Click Social"}
+	"testSteps": [
+		{
+			"page": "Entity",
+			"name": "Verify Selected Tab Text",
+			"data": "VIDEOS"
+		},
+		{
+			"page": "Shows_Clips",
+			"name": "Verify Number of Clips",
+			"data": "25"
+		},
+		{
+
+			"page": "Shows",
+			"name": "Click Episodes"
+		},
+		{
+
+			"page": "Shows_Episodes",
+			"name": "Verify Videos Is Displayed"
+		},
+		{
+			"page": "Shows_Episodes",
+			"name": "Click Sign In"
+		},
+		{
+			"page": "Navigation",
+			"name": "Run Template",
+			"data": "Optimum_Provider_SignIn"
+		},
+		{
+			"page": "Shows_Episodes",
+			"name": "Capture Number of Additional Episodes"
+		},
+		{
+			"page": "Shows_Episodes",
+			"name": "Select Additional Episodes"
+		},
+		{
+
+			"page": "Shows",
+			"name": "Click Social"
+		} /*,
+		{
+
+			"page": "Shows",
+			"name": "Click About"
+		},
+		{
+			"page": "Shows_About",
+			"name": "Verify Description Displayed"
+		}*/
 	]
 }

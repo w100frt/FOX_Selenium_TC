@@ -41,6 +41,55 @@
 		{"name":"Verify Top Search Result Subtext","objectType":"verify_value","by":"xpath","objectId":"(//div[contains(@class,'entity-list-row-content')])[1]//div[contains(@class,'subtitle')]"},
 		{"name":"Click The Herd","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'The Herd')]]"},
 		{"name":"Click First Things First","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'First Things First')]]"},
-		{"name":"Click Undisputed","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Undisputed')]]"}
+		{"name":"Click Fox Bet Live","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Bet Live')]]"},
+		{"name":"Click Speak for Yourself","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Speak for Yourself')]]"},
+		{
+			"name": "Click Undisputed",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Undisputed')]]"
+		},
+		{
+			"name": "Click Friday Night SmackDown",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'SmackDown')]]"
+		},
+		{
+			"name": "Click NASCAR Race Hub",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"
+		},
+		{
+			"name": "Click NASCAR Weekend Edition",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"
+		},
+		{
+			"name": "Click MLB Whiparound",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Whiparound')]]"
+		},
+		{
+			"name": "Click WWE Backstage",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Backstage')]]"
+		},
+		{
+			"name": "Click Big Noon Kickoff",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Big Noon')]]"
+		},
+		{
+			"name": "Click NFL Kickoff",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NFL Kickoff')]]"
+		}
 	]
 }
