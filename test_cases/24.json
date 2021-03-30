@@ -2,7 +2,7 @@
 	"testCase":"Verify 404 Page Elements",
 	"env":"dev",
 	"testId":"24",
-	"testRail":"",
+	"testRail":"7970423",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},

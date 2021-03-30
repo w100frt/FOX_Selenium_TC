@@ -228,6 +228,18 @@ namespace SeleniumProject.Function
 				}				
 			}	
 			
+			else if (step.Name.Equals("Wait for Sign Up")) {
+				while (!shown && size++ < 3) {
+					explore = driver.FindElement("xpath","//div[@id='account']").GetAttribute("class");
+					log.Info("Account Container: " + explore);
+					if (explore.Contains("open"))
+						shown = true;
+					else 
+						shown = false;
+					Thread.Sleep(0500);
+				}				
+			}	
+			
 			else {
 				throw new Exception("Test Step not found in script");
 			}

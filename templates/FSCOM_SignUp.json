@@ -4,8 +4,10 @@
     "testSteps":[
 		{"page":"Navigation", "name":"Click Sign In"},
 		{"page": "FSCOM_AccountInfo", "name": "Click Sign Up Link"},
+		{"page": "FSCOM_AccountInfo", "name": "Verify Legal Text", "data": "By clicking "Sign Up", you agree to the FOX Sports Updated Privacy Policy and Updated Terms of Use"},
 		{"page": "FSCOM_AccountInfo", "name": "Generate Email"},
 		{"page": "FSCOM_AccountInfo", "name": "Enter Password", "data": "testuserpassword"},
-		{"page": "FSCOM_AccountInfo","name": "Click Sign Up Button"}
+		{"page": "FSCOM_AccountInfo","name": "Click Sign Up Button"},
+		{"page": "FSCOM_AccountInfo","name": "Wait for Sign Up"}
     ]
 }
