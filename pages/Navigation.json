@@ -31,8 +31,8 @@
 		{"name":"Switch Frame by ID","objectType":"switch_frame","by": "id"},
 		{"name":"Verify FS Logo on Desktop","objectType":"verify_displayed","by": "xpath", "objectId":"//a[@alt='Fox Sports']"},
 		{"name":"Verify Account on Nav","objectType":"verify_displayed","by": "xpath", "objectId":"//div[contains(@class,'nav-right-col')][span[contains(.,'Account')]]"},
-		{"name":"Verify Error Page Title","objectType":"verify_value","by": "xpath", "objectId":"//div[contains(@class,'error-page-title')]"},
 		{"name":"Verify Count of User Entitlements","objectType":"script","by":"xpath","objectId":"Accounts"},
+		{"name":"Verify Error Page Title","objectType":"verify_value","by": "xpath", "objectId":"//div[contains(@class,'error-page-title')]"},
 		{"name":"Verify Home Selected on Nav","objectType":"verify_displayed","by": "xpath", "objectId":"//a[@href='/' and @class='nav-item']//div[@class='nav-item-bar active-nav']"},
 		{"name":"Verify URL Redirect","objectType":"script","by": "xpath", "objectId":"Accounts"},
 		{"name":"Verify URL Contains String","objectType":"script","by": "xpath", "objectId":"Homepage"}
