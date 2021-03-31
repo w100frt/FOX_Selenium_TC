@@ -71,7 +71,7 @@
 		{"page":"Entity_News", "name":"Click Next"},
 		{"page":"Entity_News", "name":"Verify Active Pagination Number", "data":"2"},
 		{"page":"Entity_News", "name":"Verify Number of Stories & Videos", "data":"25"},
-		{"page":"Entity", "name":"Click Events Tab"},
+		{"page":"Entity", "name":"Click Scores Tab"},
 		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"EVENTS"},
 		{"page":"Entity_Scores", "name":"Verify Scorechip is Displayed"},
 		{"page":"Entity", "name":"Click Social Tab"},

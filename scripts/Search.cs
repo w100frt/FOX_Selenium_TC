@@ -56,7 +56,6 @@ namespace SeleniumProject.Function
 					// temporary fix
 					search = "//input[@type='search']";
 					steps.Add(new TestStep(order, "Click Search", "", "click", "xpath", search, wait));
-					steps.Add(new TestStep(order, "Enter Search", ti.ToTitleCase(team.ToLower()), "input_text", "xpath", search, wait));
 					
 					if (team.Equals("MLB") || team.Equals("NBA") || team.Equals("NFL") || team.Equals("NHL") || team.Equals("SAN FRANCISCO 49ERS") || team.Equals("PHILADELPHIA 76ERS") || team.Equals("LA CLIPPERS")) {
 						switch(team) {
@@ -85,10 +84,11 @@ namespace SeleniumProject.Function
 								cat = "";
 								break;
 						}
-						
+						steps.Add(new TestStep(order, "Enter Search", cat, "input_text", "xpath", search, wait));
 						steps.Add(new TestStep(order, "Verify Search Term", cat, "verify_value", "xpath", "(//div[contains(@class,'explore-search')]//div[contains(@class,'row-title')])[1]", wait));
 					}
 					else {
+						steps.Add(new TestStep(order, "Enter Search", ti.ToTitleCase(team.ToLower()), "input_text", "xpath", search, wait));
 						steps.Add(new TestStep(order, "Verify Search Term", ti.ToTitleCase(team.ToLower()), "verify_value", "xpath", "(//div[contains(@class,'explore-search')]//div[contains(@class,'row-title')])[1]", wait));
 					}
 					TestRunner.RunTestSteps(driver, null, steps);
