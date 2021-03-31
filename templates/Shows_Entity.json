@@ -24,20 +24,7 @@
 		},
 		{
 			"page": "Shows_Episodes",
-			"name": "Click Sign In"
-		},
-		{
-			"page": "Navigation",
-			"name": "Run Template",
-			"data": "Optimum_Provider_SignIn"
-		},
-		{
-			"page": "Shows_Episodes",
-			"name": "Capture Number of Additional Episodes"
-		},
-		{
-			"page": "Shows_Episodes",
-			"name": "Select Additional Episodes"
+			"name": "Capture Number of Episodes"
 		},
 		{
 
