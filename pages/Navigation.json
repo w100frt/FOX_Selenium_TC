@@ -7,7 +7,7 @@
 		{"name":"Click Check Out Stories Link","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'check-out')]/a"},
 		{"name":"Click Explore","objectType":"script","by":"xpath","objectId":"Explore"},
 		{"name":"Click FS Logo on Desktop","objectType":"click","by": "xpath", "objectId":"//a[@alt='Fox Sports']"},
-		{"name":"Click Outside Explore Area","objectType":"click","by":"xpath","objectId":"//div[@id='account-overlay']"},
+		{"name":"Click Outside Explore Area","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'open')]//div[@id='account-overlay' or @id='flyout-overlay']"},
 		{"name":"Click Sign In","objectType":"script","by":"xpath","objectId":"Accounts"},
 		{"name":"Choose Top Player by Sport","objectType":"script","by":"xpath","objectId":"Top_Players"},
 		{"name":"Close Current Tab","objectType":"script","by": "xpath","objectId":"Homepage"},
