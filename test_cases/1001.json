@@ -2,7 +2,7 @@
   "testCase": "Explore: Show - Speak for Yourself",
   "env": "stg",
   "testId": "1001",
-  "testRail": "7769792",
+  "testRail": "7980959",
   "testView": "desktop",
   "testSteps": [
     {

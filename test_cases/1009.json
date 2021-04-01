@@ -2,7 +2,7 @@
   "testCase": "Explore: Show - NASCAR Race Hub",
   "env": "stg",
   "testId": "1009",
-  "testRail": "7769792",
+  "testRail": "7980961",
   "testView": "desktop",
   "testSteps": [
     {
