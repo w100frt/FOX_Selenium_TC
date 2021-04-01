@@ -25,6 +25,7 @@ namespace SeleniumProject.Function
 			ReadOnlyCollection<IWebElement> elements;
 			int count = 0;
 			int bars = 0;
+			List<string> odds = new List<string>();
 			
 			if (step.Name.Equals("Verify Event Odds Details by Number")) {
 				bool numeric = int.TryParse(step.Data, out number);
@@ -137,6 +138,21 @@ namespace SeleniumProject.Function
 					err.CreateVerificationError(step, "Between 1 and 5", count.ToString());
 					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
 				}
+			}
+
+			else if (step.Name.Equals("Verify Dropdown Values")) {
+				count = driver.FindElements("xpath","//div[contains(@class,'prop-bets-component')]/div[contains(@class,'prop-bets-event-title') or contains(.,'PROPS')]").Count;
+				
+				switch (step.Data) {
+					case "MLB": 
+						odds = new List<string>() { "WORLD SERIES CHAMPION", "AMERICAN LEAGUE CHAMPION", "NATIONAL LEAGUE CHAMPION", "AL EAST CHAMPION", "AL CENTRAL CHAMPION", "AL WEST CHAMPION", "NL EAST CHAMPION", "NL CENTRAL CHAMPION", "NL WEST CHAMPION"};
+						break;
+					default:
+						log.Warn("No Step Data");
+						break;
+						
+				}
+				
 			}
 			
 			else {
