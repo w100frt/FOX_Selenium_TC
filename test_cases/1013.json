@@ -2,7 +2,7 @@
     "testCase": "Explore: Show - WWE Backstage",
     "env": "stg",
     "testId": "1013",
-    "testRail": "7769792",
+    "testRail": "7980964",
     "testView": "desktop",
     "testSteps": [
       {

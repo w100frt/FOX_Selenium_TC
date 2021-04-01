@@ -3,7 +3,7 @@
     "testCase": "Explore: Show - NFL Kickoff",
     "env": "stg",
     "testId": "1015",
-    "testRail": "7769792",
+    "testRail": "7980967",
     "testView": "desktop",
     "testSteps": [
       {

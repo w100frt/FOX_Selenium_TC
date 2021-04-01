@@ -2,7 +2,7 @@
     "testCase": "Explore: Show - MLB Whiparound",
     "env": "stg",
     "testId": "1012",
-    "testRail": "7769792",
+    "testRail": "7980965",
     "testView": "desktop",
     "testSteps": [
       {

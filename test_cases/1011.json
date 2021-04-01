@@ -2,7 +2,7 @@
   "testCase": "Explore: Show - WWE SmackDown",
   "env": "stg",
   "testId": "1011",
-  "testRail": "7769792",
+  "testRail": "7980963",
   "testView": "desktop",
   "testSteps": [
     {
