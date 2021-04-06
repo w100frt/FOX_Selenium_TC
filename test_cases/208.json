@@ -6,7 +6,7 @@
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
-		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"boxing/pbc/pay-per-view-spence-jr-vs-garcia-192"},
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/boxing/pbc/pay-per-view/"},
 		{"page":"PPV", "name":"Verify Key Art Image"},
 		{"page":"PPV", "name":"Verify Key Art Description", "data":"ERROL SPENCE JR. VS DANNY GARCIA"},
 		{"page":"PPV", "name":"Verify Countdown Displayed"},

@@ -25,6 +25,7 @@ namespace SeleniumProject.Function
 			ReadOnlyCollection<IWebElement> elements;
 			int count = 0;
 			int bars = 0;
+			List<string> odds = new List<string>();
 			
 			if (step.Name.Equals("Verify Event Odds Details by Number")) {
 				bool numeric = int.TryParse(step.Data, out number);
@@ -130,12 +131,50 @@ namespace SeleniumProject.Function
                 js.ExecuteScript("arguments[0].scrollIntoView(true);", ele);
 				
 				if (count >= 1 && count <= 5) {
-					log.Info ("Verication PASSED. " + count + " is between 1 and 5.");
+					log.Info ("Verification PASSED. " + count + " is between 1 and 5.");
 				}
 				else {
 					log.Error("***Verification FAILED. Props expected to be between 1 and 5. Actual total is " + count +  ". ***");
 					err.CreateVerificationError(step, "Between 1 and 5", count.ToString());
 					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
+				}
+			}
+
+			else if (step.Name.Equals("Verify Dropdown Values")) {
+				steps.Add(new TestStep(order, "Click Open Dropdown", "", "click", "xpath", "//div[contains(@class,'dropdown-header dropdown-open')]", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+				
+				elements = driver.FindElements("xpath","//div[contains(@class,'dropdown-items')]//ul/li/a");
+				
+				switch (step.Data) {
+					case "MLB": 
+						odds = new List<string>() { "WORLD SERIES CHAMPION", "AMERICAN LEAGUE CHAMPION", "NATIONAL LEAGUE CHAMPION", "AL EAST CHAMPION", "AL CENTRAL CHAMPION", "AL WEST CHAMPION", "NL EAST CHAMPION", "NL CENTRAL CHAMPION", "NL WEST CHAMPION"};
+						break;
+					default:
+						log.Warn("No Step Data");
+						break;
+						
+				}
+				
+				if (elements.Count == odds.Count) {
+					log.Info ("Verification PASSED. Expected count [" + odds.Count + " matches Actual count [" + elements.Count + "]");  
+				}
+				else {
+					log.Error("Verification FAILED. Expected count [" + odds.Count + " does not match Actual count [" + elements.Count + "]");
+					err.CreateVerificationError(step, odds.Count, elements.Count);
+					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
+				}
+				
+				foreach (IWebElement element in elements) {
+					if (odds.Contains(element.GetAttribute("innerText"))) {
+						log.Info("Verification PASSED. [" + element.GetAttribute("innerText") + " ] is expected." );
+					}
+					else {
+						log.Error("Verification FAILED.  [" + string.Join(",", odds) + "] does not contain Actual [" + element.GetAttribute("innerText") + "]");
+						err.CreateVerificationError(step, string.Join(",", odds), element.GetAttribute("innerText"));
+						driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
+					}
 				}
 			}
 			
