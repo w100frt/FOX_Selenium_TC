@@ -50,7 +50,7 @@ namespace SeleniumProject.Function
 						stoppage.Add("2ND HALF");
 						break;
 					case "MLB":
-						status = driver.FindElement("xpath","//div[contains(@class,'scoring-summary')]//tr[2]/td[@data-index='9']/span").Text;
+						status = driver.FindElement("xpath","//div[contains(@class,'scoring-summary')]//tr[2]/td[@data-index='9']").Text;
 						stoppage.Add("TOP 1ST");
 						stoppage.Add("BOTTOM 1ST");
 						stoppage.Add("TOP 2ND");
