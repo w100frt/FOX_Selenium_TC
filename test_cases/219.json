@@ -2,7 +2,7 @@
 	"testCase":"Verify PPV Hub: Upcoming Fight",
 	"env":"dev",
 	"testId":"219",
-	"testRail":"",
+	"testRail":"7989827",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},

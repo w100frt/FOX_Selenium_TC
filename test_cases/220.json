@@ -1,0 +1,12 @@
+﻿{
+	"testCase":"Verify PPV Hub: Past Fights",
+	"env":"dev",
+	"testId":"220",
+	"testRail":"",
+	"testView":"desktop",
+	"testSteps":[
+		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Verify Tile Header 2", "data":"PAST FIGHTS"}
+	]
+}
