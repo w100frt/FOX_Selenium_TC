@@ -1,7 +1,7 @@
 ﻿{
 	"testCase":"External Scorestrip Smoke Test",
 	"env":"dev",
-	"testId":"99",
+	"testId": "150",
 	"testRail":"7914561",
 	"testView":"desktop",
 	"testSteps":[
