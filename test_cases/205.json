@@ -1,5 +1,5 @@
 ﻿{
-	"testCase":"FSCOM + MVPD Sign In + MLP Verify: Purchased",
+	"testCase":"FSCOM + MVPD Sign In + Hub Verify: Purchased",
 	"env":"dev",
 	"testId":"205",
 	"testRail":"7796618",
@@ -17,7 +17,7 @@
 		{"page":"Navigation", "name":"Navigate to Account"},
 		{"page":"MVPD_AccountInfo", "name":"Verify Provider Signed In"},
 		{"page":"Navigation", "name":"Get or Compare Device ID"},
-		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"boxing/pbc/pay-per-view-spence-jr-vs-garcia-192"},
-		{"page":"PPV", "name":"Verify Headline Text", "data":"THANK YOU FOR PURCHASING"}
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Verify Main CTA Button Text", "data":"EVENT DETAILS"}
 	]
 }

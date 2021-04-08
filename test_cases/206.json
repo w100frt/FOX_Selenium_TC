@@ -1,5 +1,5 @@
 ﻿{
-	"testCase":"FSCOM Sign In + MLP Verify: No Purchase",
+	"testCase":"FSCOM Sign In + Hub Verify: No Purchase",
 	"env":"dev",
 	"testId":"206",
 	"testRail":"7796619",
@@ -12,7 +12,7 @@
 		{"page":"Navigation", "name":"Navigate to Account"},
 		{"page":"Navigation", "name":"Get or Compare Device ID"},
 		{"page":"FSCOM_AccountInfo", "name":"Verify Account Name", "data":"TESTINGFOXSPORTS@GMAIL.COM"},
-		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"boxing/pbc/pay-per-view-spence-jr-vs-garcia-192"},
-		{"page":"PPV", "name":"Verify Headline Text", "data":"Watch the biggest fight of the Year LIVE on Saturday, December 5th, 9PM ET/6PM PT. Buy online & stream on all supported devices*"}
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Verify Main CTA Button Text", "data":"BUY NOW"}
 	]
 }
