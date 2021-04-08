@@ -1,0 +1,23 @@
+﻿{
+	"testCase":"Verify PPV Hub: Upcoming Fight",
+	"env":"dev",
+	"testId":"219",
+	"testRail":"7989827",
+	"testView":"desktop",
+	"testSteps":[
+		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Verify Tile Header 1", "data":"UPCOMING FIGHTS"},
+		{"page":"PPV", "name":"Capture Upcoming Fight Date", "data":"PPV_DATE"},
+		{"page":"PPV", "name":"Capture Upcoming Fight Title", "data":"PPV_TITLE"},
+		{"page":"PPV", "name":"Click Upcoming Fight Image"},
+		{"page":"PPV", "name":"Verify Event Header Title", "data":"#PPV_TITLE"},
+		{"page":"Navigation","name":"Run Template", "data":"FSCOM_PPVSignIn"},
+		{"page":"FSCOM_AccountInfo", "name":"Click Sign In Button"},
+		{"page":"Navigation", "name":"Navigate to Account"},
+		{"page":"FSCOM_AccountInfo", "name":"Verify Account Name", "data":"PPVFOXSPORTS@GMAIL.COM"},
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Click Event Details CTA on MLP"},
+		{"page":"PPV", "name":"Verify Event Header Title", "data":"#PPV_TITLE"}
+	]
+}
