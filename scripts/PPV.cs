@@ -32,7 +32,7 @@ namespace SeleniumProject.Function
 				if (!DataManager.CaptureMap.ContainsKey("PPV_FIGHT_NO")) {
 					DataManager.CaptureMap["PPV_FIGHT_NO"] = "1";
 				}
-				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='title']";
+				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='date']";
 				DataManager.CaptureMap[step.Data] = driver.FindElement("xpath", objId).GetAttribute("innerText");
 				log.Info("CaptureMap variable name: " + step.Data + " will equal " + driver.FindElement("xpath", objId).GetAttribute("innerText"));
 			}
@@ -41,7 +41,7 @@ namespace SeleniumProject.Function
 				if (!DataManager.CaptureMap.ContainsKey("PPV_FIGHT_NO")) {
 					DataManager.CaptureMap["PPV_FIGHT_NO"] = "1";
 				}
-				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='date']";
+				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='title']";
 				DataManager.CaptureMap[step.Data] = driver.FindElement("xpath", objId).GetAttribute("innerText");
 				log.Info("CaptureMap variable name: " + step.Data + " will equal " + driver.FindElement("xpath", objId).GetAttribute("innerText"));
 			}

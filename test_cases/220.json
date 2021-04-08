@@ -24,12 +24,15 @@
 		{"page":"PPV", "name":"Set Previous Fight Number", "data":"5"},
 		{"page":"Navigation","name":"Run Template", "data":"PPV_Previous"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Click Load More Button"},
 		{"page":"PPV", "name":"Set Previous Fight Number", "data":"6"},
 		{"page":"Navigation","name":"Run Template", "data":"PPV_Previous"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Click Load More Button"},
 		{"page":"PPV", "name":"Set Previous Fight Number", "data":"7"},
 		{"page":"Navigation","name":"Run Template", "data":"PPV_Previous"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Click Load More Button"},
 		{"page":"PPV", "name":"Set Previous Fight Number", "data":"8"},
 		{"page":"Navigation","name":"Run Template", "data":"PPV_Previous"}
 	]
