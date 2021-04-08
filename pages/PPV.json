@@ -1,6 +1,8 @@
 ﻿{
 	"page":"PPV",
 	"testDefinitions":[
+		{"name":"Capture Past Fight Date","objectType":"script","by":"xpath","objectId":"PPV"},
+		{"name":"Capture Past Fight Title","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Capture Upcoming Fight Date","objectType":"capture","by":"xpath","objectId":"//div[contains(@class,'imageTiles')][1]//div[@class='date']"},
 		{"name":"Capture Upcoming Fight Title","objectType":"capture","by":"xpath","objectId":"//div[contains(@class,'imageTiles')][1]//div[@class='title']"},
 		{"name":"Click Buy Now CTA on MLP","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'smartHeroOrderButton')]"},
@@ -9,6 +11,7 @@
 		{"name":"Click Event Scorechip View Fight Card Button","objectType":"click","by":"xpath","objectId":"//div[@id='192-202012']//a[contains(@class,'link-button')][span[.='view fight card']]"},
 		{"name":"Click Fox Sports Logo","objectType":"click","by":"xpath","objectId":"//a/img[@title='FOXSPORTS']"},
 		{"name":"Click Load More Button","objectType":"click","by":"xpath","objectId":"//div[@class='loadMore']/button"},
+		{"name":"Click Past Fight Image","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Click PPV Chip on Live TV","objectType":"click","by":"xpath","objectId":"//a[@href='/live/ppv-digital']"},
 		{"name":"Click Sign In on MLP","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'smartHeroSignIn')]"},
 		{"name":"Click Sign In Button on Accounts Page","objectType":"click","by":"xpath","objectId":"//button[contains(@class,'Submit')]"},
@@ -21,6 +24,7 @@
 		{"name":"Enter Credit Card Number","objectType":"input_text","by":"xpath","objectId":"//input[@id='cardNumber']"},
 		{"name":"Enter Credit Card Zip Code","objectType":"input_text","by":"xpath","objectId":"//input[@id='zipCode']"},
 		{"name":"Enter Password on Accounts Page","objectType":"input_text","by":"xpath","objectId":"//input[@name='password']"},
+		{"name":"Set Previous Fight Number","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Buy Now Button Enabled","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Buy Now Button Disabled","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Countdown Displayed","objectType":"verify_displayed","by":"xpath","objectId":"//div[@class='countdown']"},

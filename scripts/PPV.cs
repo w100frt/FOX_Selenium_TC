@@ -21,14 +21,39 @@ namespace SeleniumProject.Function
 			int size = 0;
 			var length = 0;
 			int count = 0;
+			string objId = "";
 			string data = "";
 			string test = "";
 			bool stop = false;
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
 			VerifyError err = new VerifyError();
 			
+			if (step.Name.Equals("Capture Past Fight Date")) {
+				if (!DataManager.CaptureMap.ContainsKey("PPV_FIGHT_NO")) {
+					DataManager.CaptureMap["PPV_FIGHT_NO"] = "1";
+				}
+				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='title']";
+				DataManager.CaptureMap[step.Data] = driver.FindElement("xpath", objId).GetAttribute("innerText");
+			}
 			
-			if (step.Name.Contains("Verify Buy Now Button")) {
+			else if (step.Name.Equals("Capture Past Fight Title")) {
+				if (!DataManager.CaptureMap.ContainsKey("PPV_FIGHT_NO")) {
+					DataManager.CaptureMap["PPV_FIGHT_NO"] = "1";
+				}
+				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='date']";
+				DataManager.CaptureMap[step.Data] = driver.FindElement("xpath", objId).GetAttribute("innerText");
+			}
+			
+			else if (step.Name.Equals("Click Past Fight Image")) {
+				if (!DataManager.CaptureMap.ContainsKey("PPV_FIGHT_NO")) {
+					DataManager.CaptureMap["PPV_FIGHT_NO"] = "1";
+				}
+				steps.Add(new TestStep(order, "Click Past Fight Image " + DataManager.CaptureMap["PPV_FIGHT_NO"], "", "click", "xpath", "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//img", wait));
+				TestRunner.RunTestSteps(driver, null, steps);
+				steps.Clear();
+			}
+			
+			else if (step.Name.Contains("Verify Buy Now Button")) {
 				test = driver.FindElement("xpath","//button[contains(@class,'formSubmit submitButton')]").GetAttribute("disabled");
 				if (!String.IsNullOrEmpty(test)) {
 					stop = bool.Parse(test);
@@ -109,6 +134,10 @@ namespace SeleniumProject.Function
 					log.Error("***Verification FAILED. Expected entitlement count [" + count + "] does not match Actual entitlement count: [" + length + "]***");
 					err.CreateVerificationError(step, count.ToString(), length.ToString());	
 				}
+			}
+			
+			else if (step.Name.Equals("Set Previous Fight Number")) {
+				DataManager.CaptureMap["PPV_FIGHT_NO"] = step.Data;
 			}
 			
 			else if (step.Name.Equals("Switch To Default Content")) {
