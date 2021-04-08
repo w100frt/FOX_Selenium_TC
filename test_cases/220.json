@@ -2,7 +2,7 @@
 	"testCase":"Verify PPV Hub: Past Fights",
 	"env":"dev",
 	"testId":"220",
-	"testRail":"",
+	"testRail":"7989831",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
