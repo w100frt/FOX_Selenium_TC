@@ -13,7 +13,7 @@
 		{"page":"Navigation", "name":"Navigate to Account"},
 		{"page":"FSCOM_AccountInfo", "name":"Verify Account Name", "data":"PPVFOXSPORTS@GMAIL.COM"},
 		{"page":"Navigation", "name":"Click Outside Explore Area"},
-		{"page":"PPV", "name":"Verify Event Header Title","data":"SPENCE JR VS GARCIA"},
+		{"page":"PPV", "name":"Verify Event Header Title","data":"RUIZ VS ARREOLA"},
 		{"page":"LiveTV", "name":"Verify Video is Playing"}
 	]
 }

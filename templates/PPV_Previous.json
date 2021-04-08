@@ -1,0 +1,10 @@
+﻿{
+    "testCase":"Template_PPV_Previous",
+    "testId":"t25",
+    "testSteps":[
+		{"page":"PPV", "name":"Capture Past Fight Date", "data":"PPV_DATE"},
+		{"page":"PPV", "name":"Capture Past Fight Title", "data":"PPV_TITLE"},
+		{"page":"PPV", "name":"Click Past Fight Image"},
+		{"page":"PPV", "name":"Verify Event Header Title", "data":"#PPV_TITLE"}
+    ]
+}
