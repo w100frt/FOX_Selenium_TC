@@ -34,6 +34,7 @@ namespace SeleniumProject.Function
 				}
 				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='title']";
 				DataManager.CaptureMap[step.Data] = driver.FindElement("xpath", objId).GetAttribute("innerText");
+				log.Info("CaptureMap variable name: " + step.Data + " will equal " + driver.FindElement("xpath", objId).GetAttribute("innerText"));
 			}
 			
 			else if (step.Name.Equals("Capture Past Fight Title")) {
@@ -42,6 +43,7 @@ namespace SeleniumProject.Function
 				}
 				objId = "//div[contains(@class,'pastFights')]//div[contains(@class,'tileItem')]["+ DataManager.CaptureMap["PPV_FIGHT_NO"] +"]//div[@class='date']";
 				DataManager.CaptureMap[step.Data] = driver.FindElement("xpath", objId).GetAttribute("innerText");
+				log.Info("CaptureMap variable name: " + step.Data + " will equal " + driver.FindElement("xpath", objId).GetAttribute("innerText"));
 			}
 			
 			else if (step.Name.Equals("Click Past Fight Image")) {
