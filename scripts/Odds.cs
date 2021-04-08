@@ -162,7 +162,7 @@ namespace SeleniumProject.Function
 				}
 				else {
 					log.Error("Verification FAILED. Expected count [" + odds.Count + " does not match Actual count [" + elements.Count + "]");
-					err.CreateVerificationError(step, odds.Count, elements.Count);
+					err.CreateVerificationError(step, odds.Count.ToString(), elements.Count.ToString());
 					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
 				}
 				
