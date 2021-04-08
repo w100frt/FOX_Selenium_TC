@@ -4,7 +4,7 @@
 		{"name":"Capture Upcoming Fight Date","objectType":"capture","by":"xpath","objectId":"//div[contains(@class,'imageTiles')][1]//div[@class='date']"},
 		{"name":"Capture Upcoming Fight Title","objectType":"capture","by":"xpath","objectId":"//div[contains(@class,'imageTiles')][1]//div[@class='title']"},
 		{"name":"Click Buy Now CTA on MLP","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'smartHeroOrderButton')]"},
-		{"name":"Click Event Details CTA on MLP","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'smartHeroDetailsButton')]"},
+		{"name":"Click Event Details CTA on MLP","objectType":"click","by":"xpath","objectId":"//a[.='Event Details']"},
 		{"name":"Click Event Scorechip Order Now Button","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'link-button')][span[.='ORDER NOW']]"},
 		{"name":"Click Event Scorechip View Fight Card Button","objectType":"click","by":"xpath","objectId":"//div[@id='192-202012']//a[contains(@class,'link-button')][span[.='view fight card']]"},
 		{"name":"Click Fox Sports Logo","objectType":"click","by":"xpath","objectId":"//a/img[@title='FOXSPORTS']"},
