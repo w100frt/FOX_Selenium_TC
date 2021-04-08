@@ -1,12 +1,12 @@
 ﻿{
-	"testCase":"MLP: Sign In - No Purchase",
+	"testCase":"Hub: Sign In - No Purchase",
 	"env":"dev",
 	"testId":"201",
 	"testRail":"7795236",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
-		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"boxing/pbc/pay-per-view-spence-jr-vs-garcia-192"},
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
 		{"page":"PPV", "name":"Verify Main CTA Button Text", "data":"BUY NOW"},
 		{"page":"PPV", "name":"Click Sign In on MLP"},
 		{"page":"PPV", "name":"Enter Email on Accounts Page", "data":"1605259420@WRIGHT.EDU"},
