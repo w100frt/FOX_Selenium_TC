@@ -1,12 +1,12 @@
 ﻿{
-	"testCase":"MLP: Buy Now CTA (Sign Up)",
+	"testCase":"Hub: Buy Now CTA (Sign Up)",
 	"env":"dev",
 	"testId":"202",
 	"testRail":"7795237",
 	"testView":"desktop",
 	"testSteps":[
 		{"page":"Navigation", "name":"Open Browser"},
-		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"boxing/pbc/pay-per-view-spence-jr-vs-garcia-192"},
+		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
 		{"page":"PPV", "name":"Click Buy Now CTA on MLP"},
 		{"page": "FSCOM_AccountInfo", "name": "Generate Email"},
 		{"page":"PPV", "name":"Enter Password on Accounts Page", "data":"testuserpassword"},
