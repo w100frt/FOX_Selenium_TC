@@ -370,13 +370,13 @@ namespace SeleniumProject.Function
 			else if (step.Name.Equals("Verify Number of Stories & Videos")) {
 				try {
 					upper = Int32.Parse(step.Data);
-					lower = upper - 2;
+					lower = upper - 1;
 				}
 				catch (Exception e){
 					log.Error("Expected data to be a numeral. Setting data to 0.");
 					upper = 0;
 				}
-				size = driver.FindElements("xpath", "//*[@class='news' or @class='news pointer-default' or contains(@class,'video-container')]").Count;
+				size = driver.FindElements("xpath", "//*[@class='news' or (contains(@class,'pointer-default') and contains(@class,'news')) or contains(@class,'video-container')]").Count;
 				if (size >= lower && size <= upper) {
 					log.Info("Verification Passed. " + size + " is between " + lower + " and " + upper); 
 				}
