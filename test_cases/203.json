@@ -11,6 +11,7 @@
 		{"page":"PPV", "name":"Enter Email on Accounts Page", "data":"ppvfoxsports@gmail.com"},
 		{"page":"PPV", "name":"Enter Password on Accounts Page", "data":"ppvtesting"},
 		{"page":"PPV", "name":"Click Sign In Button on Accounts Page"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_EventHeader"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
 		{"page":"PPV", "name":"Hover Profile Icon"},
 		{"page":"PPV", "name":"Click Order History Dropdown"},
