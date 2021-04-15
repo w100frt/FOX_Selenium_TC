@@ -25,7 +25,7 @@
 		{"name":"Enter Credit Card Number","objectType":"input_text","by":"xpath","objectId":"//input[@id='cardNumber']"},
 		{"name":"Enter Credit Card Zip Code","objectType":"input_text","by":"xpath","objectId":"//input[@id='zipCode']"},
 		{"name":"Enter Password on Accounts Page","objectType":"input_text","by":"xpath","objectId":"//input[@name='password']"},
-		{"name":"Hover Pofile Icon","objectType":"hover","by":"xpath","objectId":"//img[@class='profileIcon']"},
+		{"name":"Hover Profile Icon","objectType":"hover","by":"xpath","objectId":"//img[@class='profileIcon']"},
 		{"name":"Set Previous Fight Number","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Buy Now Button Enabled","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Buy Now Button Disabled","objectType":"script","by":"xpath","objectId":"PPV"},

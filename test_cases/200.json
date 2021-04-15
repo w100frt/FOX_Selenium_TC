@@ -18,6 +18,6 @@
 		{"page":"Navigation", "name":"Get or Compare Device ID"},
 		{"page":"FSCOM_AccountInfo", "name":"Verify Account Name", "data":"PPVFOXSPORTS@GMAIL.COM"},
 		{"page":"PPV", "name":"Verify PPV Entitlement Count", "data":"1"},
-		{"page":"PPV", "name":"Verify PPV Entitlement", "data":"ppv-fs-pbc-192"}
+		{"page":"PPV", "name":"Verify PPV Entitlement", "data":"ppv-fs-pbc-247"}
 	]
 }
