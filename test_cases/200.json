@@ -12,7 +12,7 @@
 		{"page":"PPV", "name":"Enter Email on Accounts Page", "data":"ppvfoxsports@gmail.com"},
 		{"page":"PPV", "name":"Enter Password on Accounts Page", "data":"ppvtesting"},
 		{"page":"PPV", "name":"Click Sign In Button on Accounts Page"},
-		{"page":"PPV", "name":"Verify Event Header Title", "data":"RUIZ VS ARREOLA"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_EventHeader"},
 		{"page":"Navigation","name":"Verify Account on Nav"},
 		{"page":"Navigation","name":"Navigate to Account"},
 		{"page":"Navigation", "name":"Get or Compare Device ID"},

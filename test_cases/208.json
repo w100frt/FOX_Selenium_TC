@@ -8,7 +8,7 @@
 		{"page":"Navigation", "name":"Open Browser"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
 		{"page":"PPV", "name":"Verify Key Art Image"},
-		{"page":"PPV", "name":"Verify Key Art Description", "data":"Watch Andy Ruiz vs Chris Arreola Headline LIVE on Saturday, May 1st, 9PM ET/6 PM PT. Buy online & stream on all supported devices."},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_Description"},
 		{"page":"PPV", "name":"Verify Tile Header 1", "data":"PAST FIGHTS"},
 		{"page":"PPV", "name":"Verify Number of Past Events Displayed", "data":"4"},
 		{"page":"PPV", "name":"Click Load More Button"},

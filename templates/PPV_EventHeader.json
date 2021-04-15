@@ -1,0 +1,7 @@
+﻿{
+    "testCase":"Template_PPV_EventHeader",
+    "testId":"t200",
+    "testSteps":[
+		{"page":"PPV", "name":"Verify Event Header Title","data":"RUIZ VS ARREOLA"}
+    ]
+}
