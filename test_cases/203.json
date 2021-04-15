@@ -14,6 +14,7 @@
 		{"page":"Navigation","name":"Run Template", "data":"PPV_EventHeader"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
 		{"page":"PPV", "name":"Hover Profile Icon"},
+		{"page":"PPV", "name":"Hover Profile Icon"},
 		{"page":"PPV", "name":"Click Order History Dropdown"},
 		{"page":"PPV", "name":"Verify Order History Title", "data":"ORDER HISTORY"},
 		{"page":"PPV", "name":"Verify Order History Row 1 Description", "data":"Andy Ruiz vs Chris Arreola"},
