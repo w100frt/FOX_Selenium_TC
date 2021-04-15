@@ -14,6 +14,7 @@
 		{"name":"Click Order History Dropdown","objectType":"click","by":"xpath","objectId":"//a[.='Order History']"},
 		{"name":"Click Past Fight Image","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Click PPV Chip on Live TV","objectType":"click","by":"xpath","objectId":"//a[@href='/live/ppv-digital']"},
+		{"name":"Click PPV Tab","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'desktop')]/a[span[.='PAY PER VIEW']]"},
 		{"name":"Click Sign In on MLP","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'generalSign')]"},
 		{"name":"Click Sign In Button on Accounts Page","objectType":"click","by":"xpath","objectId":"//button[contains(@class,'Submit')]"},
 		{"name":"Click Upcoming Fight Image","objectType":"click","by":"xpath","objectId":"//div[contains(@class,'upcomingFights')]//a/img"},
