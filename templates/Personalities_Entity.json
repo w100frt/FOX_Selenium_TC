@@ -1,0 +1,23 @@
+{
+  "testCase": "Personalities_Entity",
+  "testId": "t1003",
+  "testSteps": [
+    {
+      "page": "Entity",
+      "name": "Verify Selected Tab Text",
+      "data": "VIDEOS"
+    },
+    {
+      "page": "Entity",
+      "name": "Click Social Tab"
+    },
+    {
+      "page": "Shows",
+      "name": "Click Episodes"
+    },
+    {
+      "page": "Entity",
+      "name": "Click Bio Tab"
+    }
+  ]
+}
