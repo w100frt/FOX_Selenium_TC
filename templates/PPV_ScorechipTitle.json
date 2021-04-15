@@ -1,0 +1,8 @@
+﻿{
+    "testCase":"Template_PPV_ScorechipTitle",
+    "testId":"t200",
+    "testSteps":[
+		{"page":"PPV", "name":"Verify Event Scorechip Title","data":"RUIZ VS ARREOLA"},
+		{"page":"PPV", "name":"Verify Event Scorechip Matchup Title", "data":"HEAVYWEIGHT - MAIN EVENT"}
+    ]
+}
