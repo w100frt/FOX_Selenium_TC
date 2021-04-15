@@ -11,17 +11,19 @@
 		{"page":"PPV", "name":"Enter Email on Accounts Page", "data":"ppvfoxsports@gmail.com"},
 		{"page":"PPV", "name":"Enter Password on Accounts Page", "data":"ppvtesting"},
 		{"page":"PPV", "name":"Click Sign In Button on Accounts Page"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_EventHeader"},
 		{"page":"Navigation", "name":"Navigate to URL by ENV", "data":"/ppv"},
+		{"page":"PPV", "name":"Hover Profile Icon"},
 		{"page":"PPV", "name":"Hover Profile Icon"},
 		{"page":"PPV", "name":"Click Order History Dropdown"},
 		{"page":"PPV", "name":"Verify Order History Title", "data":"ORDER HISTORY"},
 		{"page":"PPV", "name":"Verify Order History Row 1 Description", "data":"Andy Ruiz vs Chris Arreola"},
 		{"page":"PPV", "name":"Verify Order History Row 1 Service Period", "data":"4/6/21-5/7/21"},
-		{"page":"PPV", "name":"Verify Order History Row 1 Amount", "data":"$53.89"},
+		{"page":"PPV", "name":"Verify Order History Row 1 Amount", "data":"-$53.89"},
 		{"page":"PPV", "name":"Click View Order History Button Row 1"},
 		{"page":"PPV", "name":"Verify Invoice Description", "data":"Andy Ruiz vs Chris Arreola"},
 		{"page":"PPV", "name":"Verify Invoice Service Period", "data":"4/6/21-5/7/21"},
 		{"page":"PPV", "name":"Verify Invoice Amount", "data":"$49.99"},
-		{"page":"PPV", "name":"Verify Invoice Total Paid", "data":"$53.89"}
+		{"page":"PPV", "name":"Verify Invoice Total Paid", "data":"-$53.89"}
 	]
 }
