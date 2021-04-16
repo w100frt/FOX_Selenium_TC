@@ -24,6 +24,8 @@ namespace SeleniumProject.Function
 			string objId = "";
 			string data = "";
 			string test = "";
+			string expected = "";
+			string actual = "";
 			bool stop = false;
 			IJavaScriptExecutor js = (IJavaScriptExecutor)driver.GetDriver();
 			VerifyError err = new VerifyError();
@@ -144,6 +146,25 @@ namespace SeleniumProject.Function
 			
 			else if (step.Name.Equals("Switch To Default Content")) {
 				driver.GetDriver().SwitchTo().DefaultContent();
+			}
+			
+			else if (step.Name.Equals("Verify Event Header Title")) {
+				expected = step.Data;
+				expected = expected.Replace(".", string.Empty);
+				length = expected.Length;
+				
+				IWebElement match = driver.FindElement("xpath", "//h1[contains(@class,'event-header-title')]");
+				actual = match.Text;
+				actual = actual.Substring(0, length);
+			
+				if (expected.Equals(actual)) {
+					log.Info("Verification PASSED. Expected data [" + expected + "] matches actual data [" + actual + "]");
+				}
+				else {
+					log.Error("***Verification FAILED. Expected data [" + expected + "] does not match actual data [" + actual + "] ***");
+					err.CreateVerificationError(step, expected, actual);
+					driver.TakeScreenshot(DataManager.CaptureMap["TEST_ID"] + "_verification_failure_" + DataManager.VerifyErrors.Count);
+				}
 			}
 			
 			else {

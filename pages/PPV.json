@@ -32,7 +32,7 @@
 		{"name":"Verify Buy Now Button Disabled","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Countdown Displayed","objectType":"verify_displayed","by":"xpath","objectId":"//div[@class='countdown']"},
 		{"name":"Verify Countdown Header Text","objectType":"verify_value","by":"xpath","objectId":"//div[@class='countdownHeader']"},
-		{"name":"Verify Event Header Title","objectType":"verify_value","by":"xpath","objectId":"//h1[contains(@class,'event-header-title')]"},
+		{"name":"Verify Event Header Title","objectType":"script","by":"xpath","objectId":"PPV"},
 		{"name":"Verify Event Scorechip Button Count","objectType":"verify_count","by":"xpath","objectId":"//div[@id='247-202105']//a[contains(@class,'link-button')]"},
 		{"name":"Verify Event Scorechip Matchup Title","objectType":"verify_value","by":"xpath","objectId":"//div[@id='247-202105']//div[contains(@class,'matchup-title')]"},
 		{"name":"Verify Event Scorechip Title","objectType":"verify_value","by":"xpath","objectId":"//div[@id='247-202105']//div[contains(@class,'chip-title')]"},
