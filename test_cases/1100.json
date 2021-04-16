@@ -34,7 +34,7 @@
       "name": "Verify Header subext",
       "objectType": "verify_value",
       "by": "xpath",
-      "objectId": "//div[contains(@class,'entity-header')]//div[contains(@class,'mgn-top-5.cl-wht')]",
+      "objectId": "//div[contains(@class,'entity-header')]//div[contains(@class,'mgn-top-5')]",
       "data": "HOST, THE HERD; CO-HOST, FOX NFL KICKOFF"
     },
     {
