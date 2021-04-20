@@ -318,6 +318,12 @@
 			"objectType": "click",
 			"by": "xpath",
 			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Colin Cowherd')]]"
+		},
+		{
+			"name": "Click Skip Bayless",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Skip Bayless')]]"
 		}
 	]
 }
