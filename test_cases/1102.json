@@ -1,0 +1,71 @@
+{
+  "testCase": "Explore: Personalities - Shannon Sharpe",
+  "env": "stg",
+  "testId": "1102",
+  "testRail": "798060",
+  "testView": "desktop",
+  "testSteps": [
+    {
+      "page": "Navigation",
+      "name": "Open Browser"
+    },
+    {
+      "page": "Navigation",
+      "name": "Click Explore"
+    },
+    {
+      "page": "Explore",
+      "name": "Click Personalities"
+    },
+    {
+      "page": "Explore",
+      "name": "Click Shannon Sharpe"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Header Text",
+      "data": "SHANNON SHARPE"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Header Divider"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Add or Remove Favorite Button Text",
+      "data": "ADD TO FAVORITES"
+    },
+    {
+      "page": "Entity",
+      "name": "Click Add or Remove Favorite Button"
+    },
+    {
+      "page": "Toasts",
+      "name": "Verify Toast Message Text",
+      "data": "Shannon Sharpe - Added to your favorites."
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Add or Remove Favorite Button Text",
+      "data": "ADDED TO FAVORITES"
+    },
+    {
+      "page": "Entity",
+      "name": "Click Add or Remove Favorite Button"
+    },
+    {
+      "page": "Toasts",
+      "name": "Click Yes to Remove Favorite"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Add or Remove Favorite Button Text",
+      "data": "ADD TO FAVORITES"
+    },
+    {
+      "page": "Navigation",
+      "name": "Run Template",
+      "data": "Personalities_Entity"
+    }
+  ]
+}

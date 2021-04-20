@@ -324,6 +324,12 @@
 			"objectType": "click",
 			"by": "xpath",
 			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Skip Bayless')]]"
+		},
+		{
+			"name": "Click Shannon Sharpe",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Shannon Sharpe')]]"
 		}
 	]
 }
