@@ -11,7 +11,7 @@
 			"name": "Click Add or Remove Favorite Button",
 			"objectType": "click",
 			"by": "xpath",
-			"objectId": "//button[@data-favorite-text]"
+			"objectId": "//button[@data-favorite-text][span[contains(@class,'favorite-text')]]"
 		},
 		{
 			"name": "Click Conferences Tab",
@@ -95,7 +95,7 @@
 			"name": "Verify Add or Remove Favorite Button Text",
 			"objectType": "verify_value",
 			"by": "xpath",
-			"objectId": "//button[@data-favorite-text]"
+			"objectId": "//button[@data-favorite-text][span[contains(@class,'favorite-text')]]"
 		},
 		{
 			"name": "Verify Header Divider",
