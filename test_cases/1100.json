@@ -31,13 +31,6 @@
       "name": "Verify Header Divider"
     },
     {
-      "name": "Verify Header subext",
-      "objectType": "verify_value",
-      "by": "xpath",
-      "objectId": "//div[contains(@class,'entity-header')]//div[contains(@class,'mgn-top-5')]",
-      "data": "HOST, THE HERD; CO-HOST, FOX NFL KICKOFF"
-    },
-    {
       "page": "Entity",
       "name": "Verify Add or Remove Favorite Button Text",
       "data": "ADD TO FAVORITES"
