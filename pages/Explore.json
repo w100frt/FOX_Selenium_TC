@@ -330,6 +330,18 @@
 			"objectType": "click",
 			"by": "xpath",
 			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Shannon Sharpe')]]"
+		},
+		{
+			"name": "Click Joel Klatt",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Joel Klatt')]]"
+		},
+		{
+			"name": "Click Emmanuel Acho",
+			"objectType": "click",
+			"by": "xpath",
+			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Emmanuel Acho')]]"
 		}
 	]
 }
