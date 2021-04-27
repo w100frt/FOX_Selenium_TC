@@ -1,6 +1,7 @@
 ﻿{
     "project":"fs",
 	"testRailProjectId": 130,
+	"testRailMilestone": 336,
 	"jobName":"PPV Playback Testing",
     "env":"prod",
     "browser":"chrome",
