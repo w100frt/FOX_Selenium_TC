@@ -15,7 +15,7 @@
 		{"page":"Explore", "name":"Verify Count of Sports", "data":"11"},
 		{"page":"Explore", "name":"Verify Explore Header Text", "data":"ADD FAVORITES"},
 		{"page":"Explore", "name":"Click Shows"},
-		{"page":"Explore", "name":"Verify Count of Shows", "data":"18"},
+		{"page":"Explore", "name":"Verify Count of Shows", "data":"19"},
 		{"page":"Favorites", "name":"Click Add New Favorites Button"},
 		{"page":"Favorites", "name":"Randomize Favorite Pro League"},
 		{"page":"Explore", "name":"Click Back Arrow"},
