@@ -32,7 +32,7 @@ namespace SeleniumProject.Function
 			Random random = new Random();
 
 			string[] regularSeason = {"November", "December", "January", "February", "March"};
-			string[] cbkGroups = {"TOP 25", "FEATURED", "Division I", "NCAA TOURNAMENT", "A 10", "A-SUN", "AAC", "ACC", "AM. EAST", "BIG 12", "BIG EAST", "BIG SKY", "BIG SOUTH", "BIG TEN", "BIG WEST", "C-USA", "CAA", "DI-IND", "HORIZON", "IVY", "MAA", "MAC", "MEASTERN", "MVC", "MWC", "NEC", "OVC", "PAC-12", "PATRIOT", "SEC", "SLC", "SOUTHERN", "SUMMIT", "SUN BELT", "SWAC", "WAC", "WCC"};
+			string[] cbkGroups = {"TOP 25", "FEATURED", "DIVISION I", "NCAA TOURNAMENT", "A 10", "A-SUN", "AAC", "ACC", "AM. EAST", "BIG 12", "BIG EAST", "BIG SKY", "BIG SOUTH", "BIG TEN", "BIG WEST", "C-USA", "CAA", "DI-IND", "HORIZON", "IVY", "MAA", "MAC", "MEASTERN", "MVC", "MWC", "NEC", "OVC", "PAC-12", "PATRIOT", "SEC", "SLC", "SOUTHERN", "SUMMIT", "SUN BELT", "SWAC", "WAC", "WCC"};
 			
 			if (step.Name.Equals("Select Regular Season CBK Date")) {
 
@@ -123,6 +123,13 @@ namespace SeleniumProject.Function
 			}
 			
 			else if (step.Name.Equals("Verify CBK Groups") || step.Name.Equals("Verify WCBK Groups")) {
+				// remove featured
+				if (step.Name.Equals("Verify WCBK Groups")) {
+					var list = new List<string>(cbkGroups);
+					list.Remove("FEATURED");
+					cbkGroups = list.ToArray();
+				}				
+				
 				data = "//div[contains(@class,'scores-home-container')]//div[contains(@class,'active')]//ul";
 				steps.Add(new TestStep(order, "Open Conference Dropdown", "", "click", "xpath", "//a[@class='dropdown-menu-title']", wait));
 				steps.Add(new TestStep(order, "Verify Dropdown is Displayed", "", "verify_displayed", "xpath", data, wait));
