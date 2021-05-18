@@ -1,0 +1,16 @@
+﻿{
+	"testCase":"FSCOM Entity: PPV Tab (No Purchase)",
+	"env":"dev",
+	"testId":"222",
+	"testRail":"8017418",
+	"testView":"desktop",
+	"testSteps":[
+		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Navigation", "name":"Get or Compare Device ID"},
+		{"page":"Navigation", "name":"Click Explore"},
+		{"page":"Explore", "name":"Click PBC"},
+		{"page":"PPV", "name":"Click PPV Tab"},
+		{"page":"PPV", "name":"Verify Main CTA Button Text", "data":"BUY NOW"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_Description"}
+	]
+}

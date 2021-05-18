@@ -1,6 +1,7 @@
 ﻿{
     "project":"fs",
 	"testRailProjectId": 130,
+	"testRailMilestone": 336,
 	"jobName":"PPV Testing",
     "env":"prod",
     "browser":"chrome",
@@ -21,7 +22,8 @@
         {"testId":212},
         {"testId":213},
         {"testId":214},
-        {"testId":219},
-        {"testId":220}
+        {"testId":220},
+        {"testId":221},
+        {"testId":222}
     ]
 }

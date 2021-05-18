@@ -16,13 +16,12 @@
 		{"page":"Explore", "name":"Click PBC"},
 		{"page":"Entity", "name":"Click Events Tab"},
 		{"page":"Entity", "name":"Verify Selected Tab Text", "data":"EVENTS"},
-		{"page":"PPV", "name":"Verify Event Scorechip Title", "data":"RUIZ VS ARREOLA"},
-		{"page":"PPV", "name":"Verify Event Scorechip Matchup Title", "data":"HEAVYWEIGHT - MAIN EVENT"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_ScorechipTitle"},
 		{"page":"PPV", "name":"Verify Event Scorechip Button Count", "data":"2"},
 		{"page":"PPV", "name":"Click Event Scorechip View Fight Card Button"},
-		{"page":"PPV", "name":"Verify Event Header Title","data":"RUIZ VS ARREOLA"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_EventHeader"},
 		{"page":"PPV", "name":"Click Event Scorechip Order Now Button"},
 		{"page":"PPV", "name":"Verify Main CTA Button Text", "data":"BUY NOW"},
-		{"page":"PPV", "name":"Verify Headline Text", "data":"Watch Andy Ruiz vs Chris Arreola Headline LIVE on Saturday, May 1st, 9PM ET/6 PM PT. Buy online & stream on all supported devices."}
+		{"page":"Navigation","name":"Run Template", "data":"PPV_Description"}
 	]
 }

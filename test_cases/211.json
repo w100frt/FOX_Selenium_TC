@@ -9,11 +9,10 @@
 		{"page":"Navigation", "name":"Navigate to Scores"},
 		{"page":"Scores", "name":"Click Boxing"},
 		{"page":"Scores", "name":"Verify Selected Category", "data":"BOXING"},
-		{"page":"PPV", "name":"Verify Event Scorechip Title", "data":"RUIZ VS ARREOLA"},
-		{"page":"PPV", "name":"Verify Event Scorechip Matchup Title", "data":"HEAVYWEIGHT - MAIN EVENT"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_ScorechipTitle"},
 		{"page":"PPV", "name":"Verify Event Scorechip Button Count", "data":"2"},
 		{"page":"PPV", "name":"Click Event Scorechip Order Now Button"},
-		{"page":"PPV", "name":"Verify Headline Text", "data":"Watch Andy Ruiz vs Chris Arreola Headline LIVE on Saturday, May 1st, 9PM ET/6 PM PT. Buy online & stream on all supported devices."},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_Description"},
 		{"page":"PPV", "name":"Verify Main CTA Button Text", "data":"BUY NOW"},
 		{"page":"PPV", "name":"Click Sign In on MLP"}
 	]

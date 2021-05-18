@@ -218,9 +218,9 @@ namespace SeleniumProject.Function
 					steps.Add(new TestStep(order, "Click Sign In", "", "click", "xpath", explore, wait));
 					TestRunner.RunTestSteps(driver, null, steps);
 					steps.Clear();
-					explore = driver.FindElement("xpath","//div[@id='account']").GetAttribute("class");
-					log.Info("Account Container: " + explore);
-					if (explore.Contains("open"))
+					explore = driver.FindElement("xpath","//a[contains(@class,'sign-in-link')]//div[contains(@class,'left')]/div").GetAttribute("class");
+					log.Info("Sign In Nav Bar: " + explore);
+					if (explore.Contains("active"))
 						shown = true;
 					else 
 						shown = false;

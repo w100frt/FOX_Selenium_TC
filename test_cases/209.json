@@ -15,10 +15,9 @@
 		{"page":"Navigation", "name":"Navigate to Scores"},
 		{"page":"Scores", "name":"Click Boxing"},
 		{"page":"Scores", "name":"Verify Selected Category", "data":"BOXING"},
-		{"page":"PPV", "name":"Verify Event Scorechip Title", "data":"RUIZ VS ARREOLA"},
-		{"page":"PPV", "name":"Verify Event Scorechip Matchup Title", "data":"HEAVYWEIGHT - MAIN EVENT"},
+		{"page":"Navigation","name":"Run Template", "data":"PPV_ScorechipTitle"},
 		{"page":"PPV", "name":"Verify Event Scorechip Button Count", "data":"1"},
 		{"page":"PPV", "name":"Click Event Scorechip View Fight Card Button"},
-		{"page":"PPV", "name":"Verify Event Header Title","data":"RUIZ VS ARREOLA"}
+		{"page":"Navigation","name":"Run Template", "data":"PPV_EventHeader"}
 	]
 }

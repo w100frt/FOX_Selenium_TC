@@ -376,7 +376,7 @@ namespace SeleniumProject.Function
 					log.Error("Expected data to be a numeral. Setting data to 0.");
 					upper = 0;
 				}
-				size = driver.FindElements("xpath", "//*[@class='news' or @class='news pointer-default' or contains(@class,'video-container')]").Count;
+				size = driver.FindElements("xpath", "//*[@class='news' or (contains(@class,'pointer-default') or contains(@class,'no') and contains(@class,'news')) or contains(@class,'video-container')]").Count;
 				if (size >= lower && size <= upper) {
 					log.Info("Verification Passed. " + size + " is between " + lower + " and " + upper); 
 				}
