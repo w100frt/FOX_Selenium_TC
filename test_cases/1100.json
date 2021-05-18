@@ -1,8 +1,8 @@
 {
-  "testCase": "Explore: Show - NASCAR Race Hub",
+  "testCase": "Explore: Personalities - Colin Cowherd",
   "env": "stg",
-  "testId": "1009",
-  "testRail": "7980961",
+  "testId": "1100",
+  "testRail": "798060",
   "testView": "desktop",
   "testSteps": [
     {
@@ -15,16 +15,16 @@
     },
     {
       "page": "Explore",
-      "name": "Click Shows"
+      "name": "Click Personalities"
     },
     {
       "page": "Explore",
-      "name": "Click NASCAR Race Hub"
+      "name": "Click Colin Cowherd"
     },
     {
       "page": "Entity",
       "name": "Verify Header Text",
-      "data": "NASCAR RACE HUB"
+      "data": "COLIN COWHERD"
     },
     {
       "page": "Entity",
@@ -42,7 +42,7 @@
     {
       "page": "Toasts",
       "name": "Verify Toast Message Text",
-      "data": "NASCAR Race Hub - Added to your favorites."
+      "data": "Colin Cowherd - Added to your favorites."
     },
     {
       "page": "Entity",
@@ -63,13 +63,9 @@
       "data": "ADD TO FAVORITES"
     },
     {
-      "page": "Entity",
-      "name": "Verify Header Subtext Exists"
-    },
-    {
       "page": "Navigation",
       "name": "Run Template",
-      "data": "Shows_Entity"
+      "data": "Personalities_Entity"
     }
   ]
 }

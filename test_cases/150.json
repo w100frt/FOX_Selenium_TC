@@ -1,0 +1,24 @@
+﻿{
+	"testCase":"External Scorestrip Smoke Test",
+	"env":"dev",
+	"testId": "150",
+	"testRail":"7914561",
+	"testView":"desktop",
+	"testSteps":[
+		{"page":"Navigation", "name":"Open Browser"},
+		{"page":"Navigation", "name":"Capture Window Handle"},
+		{"page":"Navigation", "name":"Navigate to External Scorestrip by ENV"},
+		{"page":"Navigation", "name":"Click FS Logo on Desktop"},
+		{"page":"Navigation", "name":"Switch To New Tab"},
+		{"page":"Navigation", "name":"Verify Home Selected on Nav"},
+		{"page":"Navigation", "name":"Close Current Tab"},
+		{"page":"Navigation", "name":"Switch To New Tab"},
+		{"page":"Scorestrip", "name":"Verify Scorechip Count", "data" : "5"},
+		{"page":"Scorestrip", "name":"Click All Scores Button"},
+		{"page":"Navigation", "name":"Switch To New Tab"},
+		{"page":"Scores", "name":"Verify Selected Link on Nav"},
+		{"page":"Scores", "name":"Verify Selected Category", "data": "TOP"},
+		{"page":"Scores", "name":"Verify Displayed Day on Top Scores"},
+		{"page":"Scores", "name":"Verify Scorechip is Displayed"}
+	]
+}

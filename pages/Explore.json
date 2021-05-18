@@ -46,53 +46,18 @@
 		{"name":"Click First Things First","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'First Things First')]]"},
 		{"name":"Click Fox Bet Live","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Bet Live')]]"},
 		{"name":"Click Speak for Yourself","objectType":"click","by":"xpath","objectId":"//a[contains(@class,'entity-list-row-container')][div[contains(.,'Speak for Yourself')]]"},
-		{
-			"name": "Click Undisputed",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Undisputed')]]"
-		},
-		{
-			"name": "Click Friday Night SmackDown",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'SmackDown')]]"
-		},
-		{
-			"name": "Click NASCAR Race Hub",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"
-		},
-		{
-			"name": "Click NASCAR Weekend Edition",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"
-		},
-		{
-			"name": "Click MLB Whiparound",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Whiparound')]]"
-		},
-		{
-			"name": "Click WWE Backstage",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Backstage')]]"
-		},
-		{
-			"name": "Click Big Noon Kickoff",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Big Noon')]]"
-		},
-		{
-			"name": "Click NFL Kickoff",
-			"objectType": "click",
-			"by": "xpath",
-			"objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NFL Kickoff')]]"
-		}
+    {"name": "Click Undisputed","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Undisputed')]]"},
+		{"name": "Click Friday Night SmackDown","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'SmackDown')]]"},
+    {"name": "Click NASCAR Race Hub","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"},
+		{"name": "Click NASCAR Weekend Edition","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NASCAR Race Hub')]]"},
+		{"name": "Click MLB Whiparound","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Whiparound')]]"},
+		{"name": "Click WWE Backstage","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Backstage')]]"},
+		{"name": "Click Big Noon Kickoff","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Big Noon')]]"},
+		{"name": "Click NFL Kickoff","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'NFL Kickoff')]]"},
+		{"name": "Click Colin Cowherd","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Colin Cowherd')]]"},
+		{"name": "Click Skip Bayless","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Skip Bayless')]]"},
+		{"name": "Click Shannon Sharpe","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Shannon Sharpe')]]"},
+		{"name": "Click Joel Klatt","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Joel Klatt')]]"},
+		{"name": "Click Emmanuel Acho","objectType": "click","by": "xpath","objectId": "//a[contains(@class,'entity-list-row-container')][div[contains(.,'Emmanuel Acho')]]"}
 	]
 }

@@ -40,7 +40,7 @@ namespace SeleniumProject.Function
 				log.Info("Episode Title: " + eTitle);
             }
 			
-			else if (step.Name.Equals("Capture Number of Additional Episodes"))
+			else if (step.Name.Equals("Capture Number of Episodes"))
 			{
 				size = driver.FindElements("xpath", "//div[contains(@class,'video-overlay')]").Count;
 				if(size == 0)

@@ -3,7 +3,7 @@
     "testCase": "Explore: Show - NASCAR Weekend Edition",
     "env": "stg",
     "testId": "1010",
-    "testRail": "7769792",
+    "testRail": "7980962",
     "testView": "desktop",
     "testSteps": [
       {

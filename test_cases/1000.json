@@ -2,7 +2,7 @@
   "testCase": "Explore: Show - Fox Bet Live",
   "env": "stg",
   "testId": "1000",
-  "testRail": "7769792",
+  "testRail": "798060",
   "testView": "desktop",
   "testSteps": [
     {

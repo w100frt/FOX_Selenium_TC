@@ -1,7 +1,7 @@
 {
-  "testCase": "NHL: Team Standings by Division",
+  "testCase": "MLB: Team Standings by Division",
   "env": "dev",
-  "testId": "99",
+  "testId": "98",
   "testRail": "7769828",
   "testView": "desktop",
   "testSteps": [
@@ -15,21 +15,21 @@
     },
     {
       "page": "Explore",
-      "name": "Click NHL"
+      "name": "Click MLB"
     },
     {
       "page": "Explore",
-      "name": "Click NHL"
+      "name": "Click MLB"
     },
     {
       "page": "Entity",
       "name": "Verify Header Text",
-      "data": "NHL"
+      "data": "MLB"
     },
     {
       "page": "Navigation",
       "name": "Store Sport by Data",
-      "data": "NHL"
+      "data": "MLB"
     },
     {
       "page": "Entity",
@@ -51,7 +51,7 @@
     {
       "page": "Entity_Standings",
       "name": "Click and Capture Random Team By Division",
-      "data": "NHL WEST"
+      "data": "AL EAST"
     },
     {
       "page": "Entity",
@@ -73,7 +73,7 @@
     {
       "page": "Entity_Standings",
       "name": "Verify Table Header",
-      "data": "NHL WEST"
+      "data": "AL EAST"
     },
     {
       "page": "Entity_Standings",
@@ -83,7 +83,7 @@
     {
       "page": "Entity_Standings",
       "name": "Click and Capture Random Team By Division",
-      "data": "NHL CENT"
+      "data": "AL CENTRAL"
     },
     {
       "page": "Entity",
@@ -105,7 +105,7 @@
     {
       "page": "Entity_Standings",
       "name": "Verify Table Header",
-      "data": "NHL CENT"
+      "data": "AL CENTRAL"
     },
     {
       "page": "Entity_Standings",
@@ -115,7 +115,7 @@
     {
       "page": "Entity_Standings",
       "name": "Click and Capture Random Team By Division",
-      "data": "NHL EAST"
+      "data": "AL WEST"
     },
     {
       "page": "Entity",
@@ -137,7 +137,7 @@
     {
       "page": "Entity_Standings",
       "name": "Verify Table Header",
-      "data": "NHL EAST"
+      "data": "AL WEST"
     },
     {
       "page": "Entity_Standings",
@@ -147,7 +147,7 @@
     {
       "page": "Entity_Standings",
       "name": "Click and Capture Random Team By Division",
-      "data": "NHL NORTH"
+      "data": "NL EAST"
     },
     {
       "page": "Entity",
@@ -168,7 +168,71 @@
     },
     {
       "page": "Entity_Standings",
-      "name": "NHL NORTH"
+      "name": "NL EAST"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Verify Selected Row",
+      "data": "#DIV_TEAM"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Click and Capture Random Team By Division",
+      "data": "NL CENTRAL"
+    },
+    {
+      "page": "Entity",
+      "name": "Click Standings Tab"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Selected Tab Text",
+      "data": "STANDINGS"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Click Open Standings Dropdown"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Click Division from Dropdown"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Verify Table Header",
+      "data": "NL CENTRAL"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Verify Selected Row",
+      "data": "#DIV_TEAM"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Click and Capture Random Team By Division",
+      "data": "NL WEST"
+    },
+    {
+      "page": "Entity",
+      "name": "Click Standings Tab"
+    },
+    {
+      "page": "Entity",
+      "name": "Verify Selected Tab Text",
+      "data": "STANDINGS"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Click Open Standings Dropdown"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Click Division from Dropdown"
+    },
+    {
+      "page": "Entity_Standings",
+      "name": "Verify Table Header",
+      "data": "NL WEST"
     },
     {
       "page": "Entity_Standings",

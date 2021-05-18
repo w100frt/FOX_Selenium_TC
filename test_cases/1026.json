@@ -2,7 +2,7 @@
   "testCase": "Show: Episodes - NASCAR Weekend Edition",
   "env": "stg",
   "testId": "1026",
-  "testRail": "7769792",
+  "testRail": "7980974",
   "testView": "desktop",
   "testSteps": [
     {
@@ -45,7 +45,7 @@
     },
     {
       "page": "Shows_Episodes",
-      "name": "Capture Number of Additional Episodes"
+      "name": "Capture Number of Episodes"
     },
     {
       "page": "Shows_Episodes",

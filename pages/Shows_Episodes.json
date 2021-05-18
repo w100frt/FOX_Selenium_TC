@@ -21,7 +21,7 @@
 			"objectId": "//div[contains(@class,'video-overlay')]"
 		},
 		{
-			"name": "Capture Number of Additional Episodes",
+			"name": "Capture Number of Episodes",
 			"objectType": "script",
 			"by": "xpath",
 			"objectId": "Shows"
